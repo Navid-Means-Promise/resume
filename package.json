@@ -15,6 +15,7 @@
     "test": "node --import tsx --test tests/*.test.ts",
     "typecheck": "tsc --noEmit",
     "verify:browser": "node --import tsx scripts/verify-browser.ts",
+    "verify:deployment": "node --import tsx scripts/verify-deployment.ts",
     "verify:site": "node --import tsx scripts/verify-site.ts",
     "check": "npm run typecheck && npm test && npm run build && npm run verify:site && npm run verify:browser"
   },

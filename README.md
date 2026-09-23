@@ -37,6 +37,8 @@ npm run preview     # build and serve http://localhost:4173
 ```
 
 Set `BROWSER_PATH` when Chrome is not installed at a standard Linux path.
+After deployment, set `SITE_URL` and run `npm run verify:deployment` to smoke-test
+both localized landing pages and every published PDF download.
 
 ## Deploy to GitHub Pages
 
