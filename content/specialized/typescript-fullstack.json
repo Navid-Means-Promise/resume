@@ -1,0 +1,38 @@
+{
+  "slug": "typescript-fullstack",
+  "label": "TypeScript Full-stack",
+  "role": "Senior TypeScript Product Engineer",
+  "headline": [
+    "TypeScript product delivery",
+    "with type-safe contracts between components."
+  ],
+  "summary": "I develop TypeScript products with explicit contracts between the interface, application logic, services, and data. The focus is preventing cross-component drift and controlling change through validation and tests.",
+  "accent": "#315f78",
+  "accentSoft": "#dde8ed",
+  "experienceRoles": {
+    "freelance": "Freelance TypeScript Developer"
+  },
+  "skillGroups": [
+    {"name": "Language, UI & application", "items": ["TypeScript", "Node.js", "React", "Next.js", "HTML / CSS", "Web APIs", "OOP", "Generics", "Utility types", "Schema-first validation"]},
+    {"name": "Services, data & contracts", "items": ["Express.js", "NestJS familiarity", "Fastify familiarity", "REST / OpenAPI", "GraphQL concepts", "WebSocket", "Prisma", "TypeORM", "Zod", "PostgreSQL", "MongoDB", "Redis"]},
+    {"name": "Product surfaces & tooling", "items": ["Electron", "Apache Cordova", "Web Audio API", "AR.js", "Vite", "Webpack", "NPM / pnpm", "Monorepo concepts", "GitHub Actions", "Docker"]},
+    {"name": "Quality and observability", "items": ["Vitest / Jest", "Playwright", "Testing Library", "ESLint", "OpenTelemetry", "Structured logging"]},
+    {"name": "AI capabilities in TypeScript", "items": ["AI SDKs", "LLM APIs", "RAG / embeddings", "Transformers.js / TensorFlow.js"]}
+  ],
+  "experienceFocus": {
+    "freelance": [
+      "Build web, Node.js, desktop, and cross-platform products with explicit contracts between interface, domain logic, persistence, and external integrations.",
+      "Own architecture, implementation, build automation, debugging, and refinement while using AI agents to expand delivery speed and review coverage."
+    ],
+    "security": [
+      "Carry direct vulnerability-analysis and patch-development experience into validation, dependency review, authorization, secrets handling, and browser/service trust boundaries.",
+      "Treat reproducibility and remediation as part of engineering, not a separate security hand-off."
+    ],
+    "company": [
+      "Developed distributed mobile and web products backed by NoSQL data stores and participated in technical direction and delivery.",
+      "Worked through cross-client integration and change over time—the conditions where shared types and stable contracts create real leverage."
+    ]
+  },
+  "projectKeys": ["dream-river"],
+  "includePublication": false
+}

@@ -1,0 +1,26 @@
+{
+  "name": "navid-mohammadi-resume-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node --import tsx scripts/generate.ts",
+    "build:html": "node --import tsx scripts/build-html.ts",
+    "build:pdf": "node --import tsx scripts/export-pdf.ts",
+    "clean": "node --import tsx scripts/clean.ts",
+    "preview": "npm run build && python3 -m http.server 4173 --directory dist",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "verify:browser": "node --import tsx scripts/verify-browser.ts",
+    "verify:site": "node --import tsx scripts/verify-site.ts",
+    "check": "npm run typecheck && npm test && npm run build && npm run verify:site && npm run verify:browser"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  }
+}

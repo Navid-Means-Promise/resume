@@ -1,0 +1,36 @@
+{
+  "slug": "ai-data",
+  "label": "AI & Data",
+  "role": "AI & Data Science Engineer",
+  "headline": [
+    "From research questions",
+    "to evaluated AI systems."
+  ],
+  "summary": "I turn data-driven questions into reproducible, evaluable experiments. My focus is establishing baselines, analyzing failures, comparing results against explicit criteria, and turning research or experimental output into usable capabilities.",
+  "accent": "#6e4f83",
+  "accentSoft": "#e9e0ed",
+  "experienceRoles": {
+    "freelance": "Freelance Python and AI Developer"
+  },
+  "skillGroups": [
+    {"name": "ML & deep-learning foundations", "items": ["PyTorch", "TensorFlow / Keras", "Scikit-learn", "XGBoost", "LightGBM", "JAX familiarity", "Model selection", "Feature engineering", "Cross-validation"]},
+    {"name": "Foundation & generative models", "items": ["HF Transformers", "Diffusers", "Datasets", "Accelerate", "PEFT / LoRA", "Sentence Transformers", "OpenAI-compatible APIs", "Ollama / vLLM", "Prompt & tool design"]},
+    {"name": "Data analysis & scientific Python", "items": ["NumPy", "Pandas", "Polars", "SciPy", "Jupyter", "Matplotlib", "Seaborn", "Plotly", "OpenCV", "SQL"]},
+    {"name": "LLM systems & MLOps", "items": ["RAG", "Agents", "Embeddings", "Vector search", "LangChain", "LlamaIndex", "FAISS / pgvector", "MLflow", "DVC concepts", "ONNX", "FastAPI / Docker"]}
+  ],
+  "experienceFocus": {
+    "freelance": [
+      "Use Python for data exploration, model experiments, automation, inference APIs, and reusable tooling, with software boundaries designed beyond the notebook.",
+      "Integrate AI capabilities into wider products while keeping inputs, evaluation criteria, failure behavior, and human review explicit."
+    ],
+    "security": [
+      "Bring an adversarial and evidence-oriented mindset to data leakage, unsafe inputs, dependency risk, model behavior, and validation.",
+      "Turn ambiguous findings into reproducible cases and concrete remediation—the same discipline required for trustworthy AI evaluation."
+    ],
+    "company": [
+      "Built distributed mobile and web applications, creating a practical foundation for serving data- and model-driven capabilities inside larger products.",
+      "Shared ownership of architecture and delivery, connecting experimentation to operational constraints and maintainable integration."
+    ]
+  },
+  "includePublication": true
+}

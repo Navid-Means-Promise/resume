@@ -1,0 +1,35 @@
+{
+  "slug": "security-devops",
+  "label": "Security / Platform",
+  "role": "Security & Platform Engineer",
+  "headline": [
+    "Security that continues",
+    "from evidence to verified remediation."
+  ],
+  "summary": "I carry security findings from discovery and reproduction through remediation and verification. A report is not the endpoint: technical evidence, an executable correction path, and independent verification must accompany it.",
+  "accent": "#8a493f",
+  "accentSoft": "#f0dfdc",
+  "skillGroups": [
+    {"name": "Assessment & application security", "items": ["Penetration testing", "Metasploit", "OpenVAS", "OWASP Top 10", "OWASP ASVS", "Threat modeling", "Secure code review", "Vulnerability triage", "Patch development"]},
+    {"name": "Analysis, network & standards", "items": ["Ghidra", "Reverse engineering", "Wireshark", "Packet analysis", "Network protocols", "ISO/IEC 27001 audit", "Risk analysis", "Incident-analysis concepts", "Security documentation"]},
+    {"name": "Platform, cloud & delivery", "items": ["Debian / Arch Linux", "Linux hardening", "AWS S3 / Lambda / API Gateway", "Docker", "Kubernetes concepts", "Terraform familiarity", "GitHub Actions", "CI/CD", "Secrets management", "SBOM / supply chain"]},
+    {"name": "Detection and observability", "items": ["OpenTelemetry", "Prometheus / Grafana concepts", "Structured logging", "SAST / DAST concepts", "Dependency scanning"]},
+    {"name": "AI system security", "items": ["OWASP LLM risks", "Prompt injection", "Data leakage", "Agent permissions", "AI-assisted analysis"]}
+  ],
+  "experienceOrder": ["security", "freelance", "company"],
+  "experienceFocus": {
+    "security": [
+      "Conducted security analysis, penetration testing, vulnerability assessment, reverse engineering, and patch development for government IT infrastructure.",
+      "Produced reproducible evidence and translated findings into fixes and verification steps that infrastructure stakeholders could execute."
+    ],
+    "freelance": [
+      "Apply security thinking across Windows, Linux, web, data, and hardware-backed solutions from initial architecture through integration and maintenance.",
+      "Use AI-assisted analysis where useful while reviewing outputs against system behavior, trust boundaries, and concrete evidence."
+    ],
+    "company": [
+      "Applied architectural and operational judgment to distributed mobile and web systems backed by NoSQL data stores.",
+      "Shared responsibility for technical delivery, bringing risk, dependency, and failure behavior into product decisions."
+    ]
+  },
+  "includePublication": false
+}

@@ -1,0 +1,102 @@
+{
+  "name": "Navid Mohammadi",
+  "initials": "NM",
+  "location": "Pardis, Tehran, Iran",
+  "phone": "+98 939 070 1024",
+  "phoneHref": "+989390701024",
+  "email": "Navid.Means.Promise@gmail.com",
+  "availability": "Remote-first · Open to international collaboration",
+  "careerStart": "2009",
+  "codingStart": "2005",
+  "principles": [
+    "Deep understanding before implementation",
+    "AI-assisted work with human review and tested outputs",
+    "Clear communication and patient mentoring",
+    "Mutual respect and meaningful work",
+    "Remote collaboration by default"
+  ],
+  "experience": [
+    {
+      "id": "freelance",
+      "role": "Freelance Software Engineer",
+      "organization": "Independent",
+      "period": "2009 — Present",
+      "bullets": [
+        "Own independent engagements from ambiguous requirements and architecture through implementation, debugging, delivery, and long-term refinement across Windows, Linux, and web platforms.",
+        "In hardware-backed projects, owned board design, interface definition, and the coordinated development of device and application software.",
+        "Select languages, frameworks, data stores, and automation around the constraints of each problem instead of forcing one preferred stack."
+      ]
+    },
+    {
+      "id": "security",
+      "role": "Software Security Engineer",
+      "organization": "Government sector",
+      "period": "2015 — 2021",
+      "bullets": [
+        "Performed security analysis, penetration testing, vulnerability assessment, and patch development for government IT infrastructure.",
+        "Turned findings into reproducible technical evidence, actionable remediation, and fixes that infrastructure stakeholders could apply and verify.",
+        "Connected application, network, dependency, and operational risk rather than treating security as an isolated reporting activity."
+      ]
+    },
+    {
+      "id": "company",
+      "role": "Co-Founder & Software Developer",
+      "organization": "Radin Andish · Private company",
+      "period": "2017 — 2022",
+      "bullets": [
+        "Co-founded the company and shared responsibility for technical direction, implementation, problem resolution, and delivery.",
+        "Developed scalable distributed applications for mobile and web using NoSQL databases and service-oriented boundaries.",
+        "Carried projects through integration and the successful completion of the company’s final obligations."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Sc. Network Security Engineering",
+      "school": "Islamic Azad University, North Tehran Branch",
+      "year": "2019"
+    },
+    {
+      "degree": "B.Sc. Information Technology Engineering",
+      "school": "Imam Hossein University, Tehran",
+      "year": "2014"
+    }
+  ],
+  "projects": {
+    "sky-fw": {
+      "name": "Sky-FW",
+      "url": "https://github.com/SkyFW/SkyBase",
+      "description": "An open-source Java framework exploring reusable foundations for client- and server-side development, integration boundaries, and less repetitive application delivery.",
+      "tags": ["Java", "Framework", "Client/server", "Reusable architecture"]
+    },
+    "dream-river": {
+      "name": "Dream-River",
+      "url": "https://github.com/Imaginative-Arts/DreamRiver",
+      "description": "An open-source TypeScript framework for building audio-first games with Web Audio APIs, turning low-level audio primitives into a clearer application model.",
+      "tags": ["TypeScript", "Web Audio", "Accessibility"]
+    },
+    "args-dataclass": {
+      "name": "ArgsDataClass",
+      "description": "A focused Python utility that maps command-line arguments into data classes, reducing repetitive parsing code while preserving typed, inspectable configuration.",
+      "tags": ["Python", "CLI", "Data classes"]
+    },
+    "license-hid": {
+      "name": "License Token & Linux HID Systems",
+      "kind": "Hardware-backed system",
+      "description": "A Linux HID license-token prototype with Windows and Linux tools for device configuration, diagnostics, and operation.",
+      "tags": ["Embedded Linux", "HID", "Electronics", "Host integration"]
+    }
+  },
+  "publication": {
+    "title": "Generational Evolution: An Innovative Approach to Retraining Diffusion Neural Network Models",
+    "venue": "1st International Biennial Conference of Artificial Intelligence and Data Science · Persian Gulf University",
+    "year": "2024",
+    "url": "https://en.civilica.com/doc/2008135/",
+    "context": "Accepted research in generative AI that connects diffusion-model experimentation with a broader practice of reading, evaluating, and applying academic work."
+  },
+  "academicProfile": {
+    "overview": "Academic inquiry is a continuing part of my engineering practice, not a single publication. I use research to question assumptions, compare methods, and connect practical AI work to stronger evidence.",
+    "continuousPractice": "I continually review academic papers and technical literature in artificial intelligence and data science, and participate in university workshops and academic sessions to keep research and implementation connected.",
+    "ongoingPublications": "Beyond the accepted conference paper below, additional manuscripts are under review and progressing through the publication process."
+  }
+}

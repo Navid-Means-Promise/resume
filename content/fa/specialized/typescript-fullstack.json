@@ -1,0 +1,40 @@
+{
+  "slug": "typescript-fullstack",
+  "label": "Full-stack TypeScript",
+  "role": "مهندس ارشد Full-stack TypeScript",
+  "headline": [
+    "توسعهٔ محصول با TypeScript؛",
+    "با قراردادهای Type-safe میان اجزای سیستم."
+  ],
+  "summary": "محصولات TypeScript را با قراردادهای صریح میان رابط کاربری، منطق برنامه، سرویس و داده توسعه می‌دهم. تمرکزم بر جلوگیری از ناسازگاری میان اجزا و کنترل تغییرات با Validation و تست است.",
+  "accent": "#315f78",
+  "accentSoft": "#dde8ed",
+  "experienceRoles": {
+    "freelance": "توسعه‌دهندهٔ TypeScript به‌صورت فریلنسر"
+  },
+  "skillGroups": [
+    {"name": "زبان و Frontend", "items": ["TypeScript", "React", "Next.js", "HTML / CSS", "Web APIs", "OOP", "Generics", "Utility Types"]},
+    {"name": "Backend با Node.js", "items": ["Node.js", "Express.js", "آشنایی با NestJS", "آشنایی با Fastify", "REST / OpenAPI", "مفاهیم GraphQL", "WebSocket"]},
+    {"name": "داده و قرارداد", "items": ["Prisma", "TypeORM", "Zod", "Schema Validation", "PostgreSQL", "MongoDB", "Redis"]},
+    {"name": "Desktop، Mobile و Web API", "items": ["Electron", "Apache Cordova", "Web Audio API", "AR.js"]},
+    {"name": "Build و تحویل", "items": ["Vite", "Webpack", "NPM / pnpm", "مفاهیم Monorepo", "GitHub Actions", "Docker"]},
+    {"name": "کیفیت و Observability", "items": ["Vitest / Jest", "Playwright", "Testing Library", "ESLint", "OpenTelemetry", "Structured Logging"]},
+    {"name": "قابلیت‌های AI در TypeScript", "items": ["AI SDKs", "LLM APIs", "RAG / Embeddings", "Transformers.js / TensorFlow.js"]}
+  ],
+  "experienceFocus": {
+    "freelance": [
+      "توسعهٔ اپلیکیشن‌های وب، سرویس‌های Node.js و نرم‌افزارهای Desktop و Mobile با TypeScript.",
+      "طراحی API و Data Model، تنظیم Build، دیباگ خطاهای Runtime و استفاده از Coding Agentها برای پیاده‌سازی، تست و Code Review."
+    ],
+    "security": [
+      "استفاده از تجربهٔ تحلیل آسیب‌پذیری برای پیاده‌سازی Input Validation و Authorization، بررسی Dependencyها، مدیریت Secret و تعریف Trust Boundary میان Browser و Backend.",
+      "ساخت Test Case قابل بازتولید برای مشکلات امنیتی و رفع آن‌ها در کد و Configuration پروژه."
+    ],
+    "company": [
+      "توسعهٔ اپلیکیشن‌های توزیع‌شدهٔ موبایل و وب با Databaseهای NoSQL و مشارکت در معماری و تحویل.",
+      "نگهداری APIهای مشترک میان چند Client و مدیریت تغییرات Data Model و قراردادهای سرویس."
+    ]
+  },
+  "projectKeys": ["dream-river"],
+  "includePublication": false
+}

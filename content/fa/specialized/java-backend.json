@@ -1,0 +1,40 @@
+{
+  "slug": "java-backend",
+  "label": "Java Backend",
+  "role": "مهندس ارشد بک‌اند Java",
+  "headline": [
+    "طراحی و توسعهٔ سرویس‌های Java؛",
+    "با تست، Logging و Observability."
+  ],
+  "summary": "سرویس‌های Backend را با مرزهای روشن، قراردادهای قابل تغییر و رفتار خطای قابل مشاهده طراحی و پیاده‌سازی می‌کنم. در تصمیم‌های معماری، هم‌زمان به صحت داده، Concurrency، تست‌پذیری و شرایط واقعی اجرا توجه دارم.",
+  "accent": "#7a5638",
+  "accentSoft": "#eee3d8",
+  "experienceRoles": {
+    "freelance": "توسعه‌دهندهٔ Java به‌صورت فریلنسر"
+  },
+  "skillGroups": [
+    {"name": "پلتفرم و فریم‌ورک Java", "items": ["Core Java / J2SE", "مفاهیم Modern Java", "Spring Boot", "Spring MVC / Data / Security", "Grizzly", "Jakarta EE"]},
+    {"name": "Database و Persistence", "items": ["Hibernate / JPA", "PostgreSQL / SQL / JDBC", "MongoClient", "Redis / Jedis"]},
+    {"name": "API و Messaging", "items": ["REST / OpenAPI", "OkHttp", "Jackson / Gson", "مفاهیم Kafka", "مفاهیم RabbitMQ", "Event-Driven Design"]},
+    {"name": "تست و کیفیت", "items": ["JUnit 5", "Mockito", "Testcontainers", "Integration Testing", "Performance Profiling", "Security Review"]},
+    {"name": "Build و Observability", "items": ["Maven", "آشنایی با Gradle", "Docker", "GitHub Actions", "OpenTelemetry", "Structured Logging"]},
+    {"name": "کتابخانه و معماری", "items": ["Apache Commons", "Guava", "Eclipse Collections", "Lombok", "UML", "Design Patterns", "Domain Modeling"]},
+    {"name": "قابلیت‌های AI در Java", "items": ["آشنایی با Spring AI", "آشنایی با LangChain4j", "RAG / Vector Stores"]}
+  ],
+  "experienceFocus": {
+    "freelance": [
+      "توسعهٔ Backend و اجزای قابل استفادهٔ مجدد با Java و انتخاب Framework و Database بر اساس نیاز پروژه.",
+      "انجام تحلیل نیازمندی و طراحی معماری، پیاده‌سازی و دیباگ خطاهای سرویس و استفاده از Coding Agentها زیر پوشش تست و Code Review."
+    ],
+    "security": [
+      "استفاده از تجربهٔ کشف آسیب‌پذیری و توسعهٔ پچ برای پیاده‌سازی Validation و Error Handling، بررسی Dependencyها و تعریف Trust Boundary سرویس.",
+      "رفع یافته‌های امنیتی در کد و Configuration و نوشتن Test Case برای ارزیابی نتیجهٔ اصلاح."
+    ],
+    "company": [
+      "توسعهٔ اپلیکیشن‌های توزیع‌شدهٔ موبایل و وب با Databaseهای NoSQL و مشارکت در معماری فنی.",
+      "طراحی و نگهداری APIهای مورد استفادهٔ چند Client و مدیریت Consistency و تغییرات Data Model."
+    ]
+  },
+  "projectKeys": ["sky-fw"],
+  "includePublication": false
+}

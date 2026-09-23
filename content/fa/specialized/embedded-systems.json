@@ -1,0 +1,41 @@
+{
+  "slug": "embedded-systems",
+  "label": "Embedded Systems و الکترونیک",
+  "role": "مهندس Embedded Systems و الکترونیک",
+  "headline": [
+    "توسعهٔ کامل دستگاه؛",
+    "از طراحی مدار تا تست روی سخت‌افزار."
+  ],
+  "summary": "توسعهٔ دستگاه را از تحلیل نیازمندی و طراحی سخت‌افزار تا پیاده‌سازی نرم‌افزار دستگاه، راه‌اندازی Prototype و تست نهایی پیش می‌برم. تصمیم‌های طراحی را با رفتار واقعی سخت‌افزار، اندازه‌گیری و دیباگ بررسی می‌کنم.",
+  "accent": "#567043",
+  "accentSoft": "#e2eadb",
+  "skillGroups": [
+    {"name": "Embedded Linux", "items": ["C / C++", "Embedded Linux", "Buildroot", "Yocto Project", "Linux HID", "مفاهیم DeviceTree", "Boot / Services", "Cross-compilation"]},
+    {"name": "میکروکنترلر و RTOS", "items": ["ESP32 / ESP8266", "آشنایی با ESP-IDF", "مفاهیم ARM Cortex-M", "آشنایی با FreeRTOS", "آشنایی با Zephyr"]},
+    {"name": "پروتکل‌ها و رابط‌های سخت‌افزاری", "items": ["GPIO", "UART", "I2C", "SPI", "مفاهیم CAN", "MQTT", "BLE / Wi-Fi"]},
+    {"name": "طراحی سخت‌افزار", "items": ["Schematic Capture", "طراحی PCB", "KiCad", "EasyEDA", "سنسور", "عملگر", "Hardware Interfacing", "تحلیل Datasheet"]},
+    {"name": "تست و دیباگ سخت‌افزار", "items": ["Instrumentation", "Prototype Debugging", "مفاهیم HIL", "مفاهیم JTAG / SWD"]},
+    {"name": "Build و تست نرم‌افزار دستگاه", "items": ["مفاهیم CMake / Build", "ابزار تست Python"]},
+    {"name": "امنیت دستگاه", "items": ["Trust Boundary دستگاه", "مفاهیم Secure Update"]},
+    {"name": "Edge AI", "items": ["TinyML", "آشنایی با TensorFlow Lite Micro", "مفاهیم ONNX"]}
+  ],
+  "experienceRoles": {
+    "freelance": "توسعه‌دهندهٔ سخت‌افزار و نرم‌افزار به‌صورت فریلنسر"
+  },
+  "experienceFocus": {
+    "freelance": [
+      "پذیرش مسئولیت طراحی الکترونیک، تعریف Interface دستگاه و توسعهٔ ابزارهای پیکربندی در Windows، Linux و وب.",
+      "ساخت و راه‌اندازی Prototype، عیب‌یابی مدار و دیباگ Firmware و سیستم‌عامل تا رسیدن به عملکرد پایدار دستگاه."
+    ],
+    "security": [
+      "تحلیل امنیت، تست نفوذ، ارزیابی آسیب‌پذیری و توسعهٔ پچ برای زیرساخت‌های فناوری اطلاعات دولتی.",
+      "تهیهٔ نمونهٔ قابل بازتولید و مراحل ارزیابی برای بررسی نتیجهٔ اصلاح توسط تیم زیرساخت."
+    ],
+    "company": [
+      "توسعهٔ اپلیکیشن‌های توزیع‌شدهٔ موبایل و وب با Databaseهای NoSQL و APIهای سرویس.",
+      "مشارکت در معماری، پیاده‌سازی، رفع مشکلات Integration و تحویل نهایی پروژه‌ها."
+    ]
+  },
+  "projectKeys": ["license-hid"],
+  "includePublication": false
+}

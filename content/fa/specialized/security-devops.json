@@ -1,0 +1,37 @@
+{
+  "slug": "security-devops",
+  "label": "Security و Platform",
+  "role": "مهندس امنیت و پلتفرم",
+  "headline": [
+    "از کشف آسیب‌پذیری",
+    "تا توسعهٔ پچ و ارزیابی اصلاح."
+  ],
+  "summary": "یافتهٔ امنیتی را از کشف و بازتولید تا اصلاح و ارزیابی نتیجه دنبال می‌کنم. گزارش برای من پایان کار نیست؛ شواهد فنی، راهکار اجرایی و امکان بررسی مستقل اصلاح باید همراه آن باشد.",
+  "accent": "#8a493f",
+  "accentSoft": "#f0dfdc",
+  "skillGroups": [
+    {"name": "تست نفوذ و Application Security", "items": ["تست نفوذ", "Metasploit", "OpenVAS", "OWASP Top 10", "OWASP ASVS", "Threat Modeling", "Secure Code Review", "Vulnerability Triage", "توسعهٔ پچ"]},
+    {"name": "مهندسی معکوس و تحلیل شبکه", "items": ["Ghidra", "مهندسی معکوس", "Wireshark", "Packet Analysis", "پروتکل‌های شبکه"]},
+    {"name": "استاندارد و تحلیل ریسک", "items": ["ممیزی ISO/IEC 27001", "تحلیل ریسک", "آشنایی با Incident Analysis", "مستندسازی امنیت"]},
+    {"name": "Platform و Cloud", "items": ["Debian / Arch Linux", "Linux Hardening", "AWS S3 / Lambda / API Gateway", "Docker", "مفاهیم Kubernetes", "آشنایی با Terraform"]},
+    {"name": "امنیت CI/CD و Supply Chain", "items": ["GitHub Actions", "CI/CD", "Secrets Management", "SBOM / Supply Chain", "Dependency Scanning"]},
+    {"name": "Detection و Observability", "items": ["OpenTelemetry", "مفاهیم Prometheus / Grafana", "Structured Logging", "مفاهیم SAST / DAST"]},
+    {"name": "امنیت سیستم‌های AI", "items": ["ریسک‌های OWASP LLM", "Prompt Injection", "نشت داده", "Agent Permissions", "تحلیل با AI"]}
+  ],
+  "experienceOrder": ["security", "freelance", "company"],
+  "experienceFocus": {
+    "security": [
+      "انجام تحلیل امنیت، تست نفوذ، ارزیابی آسیب‌پذیری، مهندسی معکوس و توسعهٔ پچ برای زیرساخت‌های فناوری اطلاعات دولتی.",
+      "تهیهٔ نمونهٔ قابل بازتولید، راهکار اصلاحی و مراحل Verification برای اعمال پچ و بررسی نتیجه توسط تیم زیرساخت."
+    ],
+    "freelance": [
+      "بازبینی Input Validation و Dependencyها، ارزیابی Authentication و Secret Management و مشخص‌کردن Trust Boundary در پروژه‌های Windows، Linux، وب و Embedded.",
+      "استفاده از ابزارهای AI در تحلیل و بازبینی نتیجه با Log، رفتار واقعی سیستم و Test Case قابل بازتولید."
+    ],
+    "company": [
+      "توسعهٔ اپلیکیشن‌های توزیع‌شدهٔ موبایل و وب با Databaseهای NoSQL و مشارکت در معماری و عملیات.",
+      "بررسی ریسک Dependency، دسترسی سرویس‌ها و رفتار سیستم هنگام خطا در مراحل توسعه و تحویل."
+    ]
+  },
+  "includePublication": false
+}

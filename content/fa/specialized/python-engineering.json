@@ -1,0 +1,40 @@
+{
+  "slug": "python-engineering",
+  "label": "مهندسی Python",
+  "role": "مهندس ارشد Python",
+  "headline": [
+    "توسعهٔ قابل نگهداری با Python؛",
+    "از نیازمندی تا اجرای قابل اتکا."
+  ],
+  "summary": "پروژه‌های Python را از تعریف Interface و Data Model تا تست، Packaging و Deployment پیش می‌برم. هدفم تحویل کدی است که رفتار خطا، مرزهای ورودی و مسیر تغییر آن روشن و قابل بررسی باشد.",
+  "accent": "#35688a",
+  "accentSoft": "#dfeaf0",
+  "experienceRoles": {
+    "freelance": "توسعه‌دهندهٔ Python به‌صورت فریلنسر"
+  },
+  "skillGroups": [
+    {"name": "زبان و طراحی Python", "items": ["Python", "Type Hints", "Data Classes", "Pydantic", "OOP", "Protocols", "Asyncio", "Context Managers"]},
+    {"name": "وب و API", "items": ["FastAPI", "آشنایی با Django", "Flask", "Celery", "HTTPX", "REST / OpenAPI"]},
+    {"name": "Database و Persistence", "items": ["SQLAlchemy", "Alembic", "PostgreSQL", "Redis"]},
+    {"name": "داده و اتوماسیون", "items": ["Pandas", "NumPy", "آشنایی با Polars", "Jupyter", "گردش‌کار ETL", "اتوماسیون فایل و Process", "AWS Lambda", "Queue", "Webhook"]},
+    {"name": "تست و کیفیت", "items": ["Pytest", "آشنایی با Hypothesis", "mypy", "Ruff"]},
+    {"name": "Packaging و تحویل", "items": ["Packaging", "طراحی CLI", "Poetry / uv", "Linux", "GitHub Actions", "Docker"]},
+    {"name": "قابلیت‌های AI در Python", "items": ["LLM APIs", "RAG / Embeddings", "Model Serving"]}
+  ],
+  "experienceFocus": {
+    "freelance": [
+      "توسعهٔ سرویس وب، ابزار CLI، اسکریپت‌های اتوماسیون و ماژول‌های تبدیل داده با Python.",
+      "طراحی API و Data Model، پیاده‌سازی Validation و تست و آماده‌سازی پروژه برای Deployment و نگهداری."
+    ],
+    "security": [
+      "استفاده از تجربهٔ تحلیل امنیت برای پیاده‌سازی Input Validation و Authentication، بررسی Dependencyها، تنظیم Logging و مدیریت خطا.",
+      "ساخت Test Case قابل بازتولید برای عیب‌یابی سرویس‌ها و اسکریپت‌های اتوماسیون و ارزیابی نتیجهٔ اصلاح."
+    ],
+    "company": [
+      "توسعهٔ اپلیکیشن‌های توزیع‌شده با Databaseهای NoSQL و APIهای مورد استفادهٔ Clientهای موبایل و وب.",
+      "مشارکت در معماری، پیاده‌سازی، رفع مشکلات Integration و تحویل نهایی پروژه‌ها."
+    ]
+  },
+  "projectKeys": ["args-dataclass"],
+  "includePublication": false
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "java-backend",
+  "label": "Java Backend",
+  "role": "Senior Java Backend Engineer",
+  "headline": [
+    "Durable Java services",
+    "with observable, explicit boundaries."
+  ],
+  "summary": "I design and implement backend services with explicit boundaries, evolvable contracts, and observable failure behavior. Architecture decisions account for data correctness, concurrency, testability, and real operating conditions together.",
+  "accent": "#7a5638",
+  "accentSoft": "#eee3d8",
+  "experienceRoles": {
+    "freelance": "Freelance Java Developer"
+  },
+  "skillGroups": [
+    {"name": "Java platform & frameworks", "items": ["Core Java / J2SE", "Modern Java concepts", "Spring Boot", "Spring MVC / Data / Security", "Hibernate / JPA", "Grizzly", "Jakarta EE", "Maven", "Gradle familiarity"]},
+    {"name": "Data, transport & distributed systems", "items": ["PostgreSQL / SQL / JDBC", "MongoClient", "Redis / Jedis", "REST / OpenAPI", "OkHttp", "Jackson / Gson", "Kafka concepts", "RabbitMQ concepts", "Event-driven design"]},
+    {"name": "Quality, operations & observability", "items": ["JUnit 5", "Mockito", "Testcontainers", "Integration testing", "Docker", "GitHub Actions", "OpenTelemetry", "Structured logging", "Performance profiling", "Security review"]},
+    {"name": "Libraries and architecture", "items": ["Apache Commons", "Guava", "Eclipse Collections", "Lombok", "UML", "Design patterns", "Domain modeling"]},
+    {"name": "AI capabilities in Java", "items": ["Spring AI familiarity", "LangChain4j familiarity", "RAG / vector stores"]}
+  ],
+  "experienceFocus": {
+    "freelance": [
+      "Build backend and cross-platform software with reusable components, explicit integration boundaries, and technology selected around actual constraints.",
+      "Own requirements, architecture, implementation, debugging, and delivery while using AI-assisted workflows under review and test."
+    ],
+    "security": [
+      "Use direct experience in vulnerability discovery and patch development to improve validation, dependency decisions, error handling, and service trust boundaries.",
+      "Translate technical findings into code-level correction and verification rather than separating security from delivery."
+    ],
+    "company": [
+      "Developed scalable distributed mobile and web systems using NoSQL data stores and participated in technical direction.",
+      "Worked across integration and delivery constraints that inform pragmatic decisions about service boundaries, consistency, and change."
+    ]
+  },
+  "projectKeys": ["sky-fw"],
+  "includePublication": false
+}

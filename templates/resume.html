@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="{{language}}" dir="{{direction}}" style="--accent: {{accent}}; --accent-soft: {{accentSoft}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{metaDescription}}">
+  <meta name="theme-color" content="{{accent}}">
+  <title>{{documentTitle}}</title>
+  <link rel="alternate" hreflang="{{alternateLocaleCode}}" href="{{alternateLocaleHref}}">
+  <link rel="stylesheet" href="{{stylesheetHref}}">
+</head>
+<body>
+  <nav class="screen-toolbar" aria-label="{{resumeEditions}}">
+    <a class="library-link" href="../">{{allEditions}}</a>
+    <a class="locale-link" href="{{alternateLocaleHref}}" dir="auto">{{alternateLocaleLabel}}</a>
+    <div class="edition-links">{{variantLinks}}</div>
+    <a class="download-link" data-primary-action href="./{{pdfFilename}}" download>{{downloadPdf}}</a>
+  </nav>
+
+  <main class="resume-document" id="main-content" data-edition="{{slug}}" data-locale="{{language}}" data-has-evidence="{{hasEvidence}}">
+    <section class="resume-page first-page">
+      <header class="cover">
+        <div class="folio-bar">
+          <span>{{documentSeries}} · {{label}}</span>
+          <span>{{pageOne}} · <bdi>01/02</bdi></span>
+        </div>
+
+        <figure class="portrait-frame">
+          <img class="portrait-background" src="{{headerBackgroundSrc}}" alt="" width="1983" height="793">
+          <img class="portrait-cutout" src="{{headerPortraitSrc}}" alt="{{portraitAlt}}" width="1402" height="1122">
+          <img class="portrait-print-composite" src="{{headerCompositeSrc}}" alt="" width="1983" height="269">
+        </figure>
+
+        <div class="identity-grid">
+          <div class="identity-block">
+            <h1>{{name}}</h1>
+            <p class="role">{{role}}</p>
+          </div>
+          <div class="hero-thesis">
+            <p class="section-kicker">{{profileThesis}}</p>
+            <h2>{{headline}}</h2>
+            <p>{{summary}}</p>
+          </div>
+        </div>
+
+        <address class="contact-grid">
+          <span>{{location}}</span>
+          <a href="mailto:{{email}}"><bdi>{{email}}</bdi></a>
+          <a href="tel:{{phoneHref}}"><bdi>{{phone}}</bdi></a>
+          <span>{{availability}}</span>
+        </address>
+      </header>
+
+      <section class="experience" aria-labelledby="experience-heading">
+        <div class="section-title-row">
+          <h2 id="experience-heading">{{professionalExperience}}</h2>
+          <span class="career-range">{{careerRange}}</span>
+        </div>
+        <div class="experience-timeline">{{experienceEntries}}</div>
+      </section>
+
+      {{evidence}}
+
+      <footer class="page-footer">
+        <span>{{name}} · {{role}}</span>
+        <span><bdi>01</bdi></span>
+      </footer>
+    </section>
+
+    <section class="resume-page second-page">
+      <header class="page-two-header">
+        <div>
+          <p class="eyebrow">{{name}} · {{label}}</p>
+          <h2>{{scopeAndEvidence}}</h2>
+        </div>
+        <span class="page-number">02</span>
+      </header>
+
+      {{academicDossier}}
+
+      <section class="capability-map" aria-label="{{technicalToolkit}}">
+        <p class="capability-note">{{capabilityDomains}}</p>
+        <div class="skill-domain-grid" data-count="{{skillGroupCount}}">{{skills}}</div>
+      </section>
+
+      <section class="foundation-grid">
+        <div class="education" aria-labelledby="education-heading">
+          <h2 id="education-heading">{{education}}</h2>
+          {{educationEntries}}
+        </div>
+        <div class="principles" aria-labelledby="principles-heading">
+          <h2 id="principles-heading">{{engineeringPrinciples}}</h2>
+          {{principles}}
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <span>{{name}} · {{label}} · {{editionWord}}</span>
+        <span>{{focusedResume}} · {{additionalDetail}}</span>
+        <span><bdi>02</bdi></span>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>

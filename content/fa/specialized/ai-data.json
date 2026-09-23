@@ -1,0 +1,37 @@
+{
+  "slug": "ai-data",
+  "label": "هوش مصنوعی و داده",
+  "role": "مهندس هوش مصنوعی و علوم داده",
+  "headline": [
+    "تحلیل داده و آزمایش مدل؛",
+    "از Baseline تا Deployment."
+  ],
+  "summary": "مسئله‌های داده‌محور را به آزمایش‌های قابل تکرار و قابل ارزیابی تبدیل می‌کنم. تمرکزم بر تعریف Baseline، تحلیل خطا، مقایسهٔ نتیجه با معیار مشخص و تبدیل خروجی پژوهش یا آزمایش به قابلیت قابل استفاده است.",
+  "accent": "#6e4f83",
+  "accentSoft": "#e9e0ed",
+  "experienceRoles": {
+    "freelance": "توسعه‌دهندهٔ Python و هوش مصنوعی به‌صورت فریلنسر"
+  },
+  "skillGroups": [
+    {"name": "مبانی ML و Deep Learning", "items": ["PyTorch", "TensorFlow / Keras", "Scikit-learn", "XGBoost", "LightGBM", "آشنایی با JAX", "Model Selection", "Feature Engineering", "Cross-validation"]},
+    {"name": "مدل‌های Foundation و مولد", "items": ["HF Transformers", "Diffusers", "Datasets", "Accelerate", "PEFT / LoRA", "Sentence Transformers"]},
+    {"name": "تحلیل داده و Scientific Python", "items": ["NumPy", "Pandas", "Polars", "SciPy", "Jupyter", "Matplotlib", "Seaborn", "Plotly", "OpenCV", "SQL"]},
+    {"name": "اپلیکیشن‌های LLM", "items": ["OpenAI-compatible APIs", "Ollama / vLLM", "Prompt / Tool Design", "RAG", "Agents", "Embeddings", "Vector Search", "LangChain", "LlamaIndex", "FAISS / pgvector"]},
+    {"name": "MLOps و Model Serving", "items": ["MLflow", "مفاهیم DVC", "ONNX", "FastAPI / Docker"]}
+  ],
+  "experienceFocus": {
+    "freelance": [
+      "استفاده از Python برای تحلیل اکتشافی داده، آزمایش مدل، اتوماسیون، توسعهٔ APIهای Inference و تبدیل Notebook به ماژول قابل تست.",
+      "افزودن قابلیت‌های AI به اپلیکیشن با ورودی مشخص، معیار ارزیابی، مدیریت خطا و امکان بازبینی خروجی توسط کاربر."
+    ],
+    "security": [
+      "بررسی نشت داده، ورودی ناامن، ریسک Dependency و رفتار غیرمنتظرهٔ مدل با استفاده از تجربهٔ تحلیل امنیت.",
+      "ساخت نمونهٔ قابل بازتولید برای خطا و ارزیابی نتیجهٔ اصلاح به‌جای اتکا به خروجی‌های موردی مدل."
+    ],
+    "company": [
+      "توسعهٔ اپلیکیشن‌های توزیع‌شدهٔ موبایل و وب و کار با Databaseهای NoSQL و سرویس‌های Backend.",
+      "طراحی Logging و مدیریت خطا برای قابلیت‌های داده‌محور و مشارکت در معماری و تحویل اپلیکیشن."
+    ]
+  },
+  "includePublication": true
+}

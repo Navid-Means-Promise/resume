@@ -1,0 +1,41 @@
+{
+  "slug": "embedded-systems",
+  "label": "Embedded Systems & Electronics",
+  "role": "Embedded Systems & Electronics Engineer",
+  "headline": [
+    "Complete device development,",
+    "from circuit design to hardware test."
+  ],
+  "summary": "I take device development from requirements and hardware design through device software, prototype bring-up, and final test. Design decisions are checked against real hardware behavior, measurement, and debugging evidence.",
+  "accent": "#567043",
+  "accentSoft": "#e2eadb",
+  "skillGroups": [
+    {"name": "Embedded Linux", "items": ["C / C++", "Embedded Linux", "Buildroot", "Yocto Project", "Linux HID", "DeviceTree concepts", "Boot / services", "Cross-compilation"]},
+    {"name": "Microcontrollers and RTOS", "items": ["ESP32 / ESP8266", "ESP-IDF familiarity", "ARM Cortex-M concepts", "FreeRTOS familiarity", "Zephyr familiarity"]},
+    {"name": "Protocols and hardware interfaces", "items": ["GPIO", "UART", "I2C", "SPI", "CAN concepts", "MQTT", "BLE / Wi-Fi"]},
+    {"name": "Hardware design", "items": ["Schematic capture", "PCB design", "KiCad", "EasyEDA", "Sensors", "Actuators", "Hardware interfacing", "Datasheet analysis"]},
+    {"name": "Hardware test and debug", "items": ["Instrumentation", "Prototype debugging", "HIL concepts", "JTAG / SWD concepts"]},
+    {"name": "Device software build and test", "items": ["CMake / build concepts", "Python test tooling"]},
+    {"name": "Device security", "items": ["Device trust boundaries", "Secure update concepts"]},
+    {"name": "Edge AI", "items": ["TinyML", "TensorFlow Lite Micro familiarity", "ONNX concepts"]}
+  ],
+  "experienceRoles": {
+    "freelance": "Freelance Hardware and Software Developer"
+  },
+  "experienceFocus": {
+    "freelance": [
+      "Owned electronics design, device-interface decisions, and configuration tooling across Windows, Linux, and web environments.",
+      "Built and brought up prototypes, debugging circuits, firmware, and operating-system behavior until the device operated reliably."
+    ],
+    "security": [
+      "Conducted security analysis, penetration testing, vulnerability assessment, reverse engineering, and patch development for government IT infrastructure.",
+      "Produced reproducible evidence and verification steps so infrastructure teams could evaluate each remediation."
+    ],
+    "company": [
+      "Developed distributed mobile and web applications backed by NoSQL databases and service APIs.",
+      "Shared responsibility for architecture, implementation, integration debugging, and final delivery."
+    ]
+  },
+  "projectKeys": ["license-hid"],
+  "includePublication": false
+}
