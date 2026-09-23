@@ -1,32 +1,8 @@
-import { spawn, type ChildProcess } from "node:child_process";
-import { mkdtemp, rm } from "node:fs/promises";
-import os from "node:os";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
+import { CdpConnection, launchChrome, stopChrome } from "./chrome.ts";
 import { DIST_DIRECTORY, EDITION_ORDER, LOCALE_OUTPUTS } from "./config.ts";
-import { resolveBrowser } from "./export-pdf.ts";
-
-interface CdpMessage {
-  error?: { message: string };
-  id?: number;
-  method?: string;
-  params?: unknown;
-  result?: unknown;
-  sessionId?: string;
-}
-
-interface PendingRequest {
-  reject: (reason: Error) => void;
-  resolve: (value: unknown) => void;
-}
-
-interface EventWaiter {
-  method: string;
-  resolve: () => void;
-  sessionId?: string;
-  timer: ReturnType<typeof setTimeout>;
-}
 
 interface BrowserAudit {
   bodyOverflowX: string;
@@ -36,117 +12,6 @@ interface BrowserAudit {
   rootOverflowX: string;
   rootScrollWidth: number;
   viewportWidth: number;
-}
-
-class CdpConnection {
-  private readonly pending = new Map<number, PendingRequest>();
-  private readonly waiters = new Set<EventWaiter>();
-  private requestId = 0;
-
-  private constructor(private readonly socket: WebSocket) {
-    socket.addEventListener("message", (event) => {
-      const message = JSON.parse(String(event.data)) as CdpMessage;
-      if (message.id !== undefined) {
-        const pending = this.pending.get(message.id);
-        if (!pending) return;
-        this.pending.delete(message.id);
-        if (message.error) pending.reject(new Error(message.error.message));
-        else pending.resolve(message.result);
-        return;
-      }
-      if (!message.method) return;
-      for (const waiter of this.waiters) {
-        if (waiter.method !== message.method) continue;
-        if (waiter.sessionId !== undefined && waiter.sessionId !== message.sessionId) continue;
-        clearTimeout(waiter.timer);
-        this.waiters.delete(waiter);
-        waiter.resolve();
-      }
-    });
-  }
-
-  public static async connect(endpoint: string): Promise<CdpConnection> {
-    const socket = new WebSocket(endpoint);
-    await new Promise<void>((resolve, reject) => {
-      socket.addEventListener("open", () => resolve(), { once: true });
-      socket.addEventListener("error", () => reject(new Error("Could not connect to Chrome")), {
-        once: true,
-      });
-    });
-    return new CdpConnection(socket);
-  }
-
-  public request<T>(
-    method: string,
-    params: Record<string, unknown> = {},
-    sessionId?: string,
-  ): Promise<T> {
-    const id = ++this.requestId;
-    const payload = sessionId === undefined ? { id, method, params } : { id, method, params, sessionId };
-    return new Promise<T>((resolve, reject) => {
-      this.pending.set(id, {
-        reject,
-        resolve: (value) => resolve(value as T),
-      });
-      this.socket.send(JSON.stringify(payload));
-    });
-  }
-
-  public waitFor(method: string, sessionId?: string): Promise<void> {
-    return new Promise<void>((resolve, reject) => {
-      const waiter: EventWaiter = {
-        method,
-        resolve,
-        ...(sessionId === undefined ? {} : { sessionId }),
-        timer: setTimeout(() => {
-          this.waiters.delete(waiter);
-          reject(new Error(`Timed out waiting for Chrome event ${method}`));
-        }, 15_000),
-      };
-      this.waiters.add(waiter);
-    });
-  }
-
-  public close(): void {
-    this.socket.close();
-  }
-}
-
-async function launchChrome(): Promise<{
-  endpoint: string;
-  process: ChildProcess;
-  profileDirectory: string;
-}> {
-  const profileDirectory = await mkdtemp(path.join(os.tmpdir(), "resume-chrome-"));
-  const browserProcess = spawn(
-    resolveBrowser(),
-    [
-      "--headless=new",
-      "--disable-gpu",
-      "--no-sandbox",
-      "--allow-file-access-from-files",
-      "--remote-debugging-port=0",
-      `--user-data-dir=${profileDirectory}`,
-      "about:blank",
-    ],
-    { stdio: ["ignore", "ignore", "pipe"] },
-  );
-  const endpoint = await new Promise<string>((resolve, reject) => {
-    let stderr = "";
-    const timer = setTimeout(() => reject(new Error(`Chrome did not start:\n${stderr}`)), 15_000);
-    browserProcess.stderr?.on("data", (chunk: Buffer) => {
-      stderr += chunk.toString();
-      const match = stderr.match(/DevTools listening on (ws:\/\/[^\s]+)/u);
-      if (!match?.[1]) return;
-      clearTimeout(timer);
-      resolve(match[1]);
-    });
-    browserProcess.once("exit", (code) => {
-      clearTimeout(timer);
-      reject(new Error(`Chrome exited before its debugging endpoint was ready (${String(code)})`));
-    });
-  });
-  return { endpoint, process: browserProcess, profileDirectory };
 }
 
 function pagePaths(): string[] {
@@ -256,19 +121,7 @@ export async function verifyBrowser(): Promise<void> {
     process.stdout.write("Verified all 16 pages at 360, 375, 390, and 412 CSS pixels.\n");
   } finally {
     cdp.close();
-    if (chrome.process.exitCode === null && chrome.process.signalCode === null) {
-      chrome.process.kill("SIGTERM");
-      await Promise.race([
-        new Promise<void>((resolve) => chrome.process.once("exit", () => resolve())),
-        new Promise<void>((resolve) => setTimeout(resolve, 5_000)),
-      ]);
-    }
-    await rm(chrome.profileDirectory, {
-      force: true,
-      maxRetries: 5,
-      recursive: true,
-      retryDelay: 100,
-    });
+    await stopChrome(chrome);
   }
 }
 

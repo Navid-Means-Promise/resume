@@ -24,7 +24,8 @@ HTML renderers + template ── relative Pages-safe routes, versioned assets
 - `content/` is the only maintained source for career facts, edition emphasis, and localized interface messages.
 - `scripts/content.ts` is the content boundary. It parses untrusted JSON into named types, rejects malformed references, and enforces English/Persian structural parity before rendering.
 - `scripts/build-html.ts` owns static rendering and the asset manifest. Runtime asset paths are declared once in `scripts/config.ts`; every generated asset URL receives a content-derived version token.
-- `scripts/export-pdf.ts` is the Chrome adapter. It turns the generated resume pages into PDFs and rejects transparency objects known to render incorrectly in some PDF viewers.
+- `scripts/chrome.ts` owns the shared headless Chrome lifecycle and the timeout-bounded DevTools Protocol connection used by release checks.
+- `scripts/export-pdf.ts` prints generated pages through the DevTools Protocol, validates complete PDF output, and rejects transparency objects known to render incorrectly in some PDF viewers.
 - `scripts/verify-site.ts` proves generated routes, local links, assets, and downloads are complete. `scripts/verify-browser.ts` proves every route has LTR/RTL direction parity and no mobile-width overflow.
 
 No server, client-side state, database, framework, or dependency-injection container is needed: all pages are deterministic build artifacts and contain no application logic. Introducing those layers would add boundaries without a product requirement.
