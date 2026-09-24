@@ -6,6 +6,7 @@ import { DIST_DIRECTORY, EDITION_ORDER, LOCALE_OUTPUTS } from "./config.ts";
 
 interface BrowserAudit {
   bodyOverflowX: string;
+  customFontFailures: string[];
   direction: string;
   offenders: string[];
   primaryActionFailures: string[];
@@ -36,6 +37,11 @@ function assertAudit(audit: BrowserAudit, pagePath: string, width: number): void
   if (audit.primaryActionFailures.length > 0) {
     throw new Error(
       `${page} has undersized primary actions at ${width}px: ${audit.primaryActionFailures.join(", ")}`,
+    );
+  }
+  if (audit.customFontFailures.length > 0) {
+    throw new Error(
+      `${page} did not render with its Persian fonts at ${width}px: ${audit.customFontFailures.join(", ")}`,
     );
   }
   const expectedDirection = page.startsWith(`fa${path.sep}`) || page === path.join("fa", "index.html")
@@ -87,8 +93,32 @@ export async function verifyBrowser(): Promise<void> {
                 const classes = [...element.classList].slice(0, 2).map((name) => "." + name).join("");
                 return element.tagName.toLowerCase() + id + classes;
               };
+              const customFontFailures = [];
+              if (document.documentElement.lang === "fa") {
+                const loadedFamilies = new Set(
+                  [...document.fonts]
+                    .filter((font) => font.status === "loaded")
+                    .map((font) => font.family.replaceAll('"', "")),
+                );
+                for (const family of ["Estedad Resume", "Vazirmatn Resume"]) {
+                  if (!loadedFamilies.has(family)) customFontFailures.push("unloaded " + family);
+                }
+                for (const [selector, family] of [
+                  ["body", "Vazirmatn Resume"],
+                  [".library-hero h1", "Estedad Resume"],
+                  [".library-hero .lede", "Vazirmatn Resume"],
+                  [".library-heading h2", "Estedad Resume"],
+                  [".edition-card h3", "Estedad Resume"],
+                ]) {
+                  const element = document.querySelector(selector);
+                  if (element && !getComputedStyle(element).fontFamily.includes(family)) {
+                    customFontFailures.push(selector + " expected " + family);
+                  }
+                }
+              }
               return {
                 bodyOverflowX: getComputedStyle(document.body).overflowX,
+                customFontFailures,
                 direction: document.documentElement.dir,
                 offenders: visible
                   .filter((element) => {

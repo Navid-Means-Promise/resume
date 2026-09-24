@@ -789,6 +789,10 @@ html[lang="fa"] .role {
   font-style: normal;
 }
 
+html[lang="fa"] .library-hero .lede {
+  font-family: "Vazirmatn Resume", "Noto Sans Arabic", "DejaVu Sans", Tahoma, sans-serif;
+}
+
 html[lang="fa"] .identity-block h1 {
   font-size: 23pt;
   line-height: 1.12;
