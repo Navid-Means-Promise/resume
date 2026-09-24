@@ -1,12 +1,13 @@
 {
   "slug": "general",
   "label": "General",
-  "role": "Senior Multidisciplinary Software Engineer",
+  "cardNote": "🧭 The broad view: experience, tools, and selected work",
+  "role": "Software Developer",
   "headline": [
-    "From ambiguous problems",
-    "to working, maintainable systems."
+    "From understanding the problem",
+    "to building something that works in practice."
   ],
-  "summary": "Since 2009, I have taken software and cross-domain projects from requirements through delivery and maintenance. My strength is owning the complete technical path and resolving problems at the boundaries between system components.",
+  "summary": "Since 2009, I have worked on both independent and team projects: web services, desktop tools, and devices where the software and hardware had to be built together. I usually join while the requirements are still taking shape and stay involved through implementation, debugging, and delivery.",
   "accent": "#17656d",
   "accentSoft": "#dceae7",
   "skillGroups": [
@@ -20,16 +21,16 @@
   ],
   "experienceFocus": {
     "freelance": [
-      "Own independent software engagements across Windows, Linux, web, data workflows, and automation—from problem definition and architecture through delivery and refinement.",
-      "In hardware-backed projects, owned board design, interface definition, and the coordinated development of device and application software."
+      "Built independent projects across Windows, Linux, web, data processing, and automation, from understanding the need through implementation and delivery.",
+      "When a project included custom hardware, I worked on the board, device interface, and device software alongside the user application."
     ],
     "security": [
-      "Combined security analysis, penetration testing, vulnerability assessment, and reverse engineering with patch development for government infrastructure.",
-      "Converted findings into fixes, verification steps, and guidance that infrastructure teams could act on—not reports that stopped at discovery."
+      "Performed security analysis and penetration testing for government infrastructure, investigated vulnerabilities, and wrote patches for some of them.",
+      "Delivered findings with a repeatable example, a practical fix, and a way for the infrastructure team to check the result independently."
     ],
     "company": [
-      "Co-founded a private software company and shared ownership of technical direction, implementation, integration, and delivery.",
-      "Developed scalable distributed mobile and web products backed by NoSQL data stores and carried obligations through completion."
+      "Co-founded a software company and worked on design, implementation, integration problems, and project delivery.",
+      "Built mobile and web applications with NoSQL databases and continued the remaining projects until the company’s commitments were complete."
     ]
   },
   "projectKeys": ["sky-fw", "dream-river", "args-dataclass"],

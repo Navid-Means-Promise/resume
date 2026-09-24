@@ -1,12 +1,13 @@
 {
   "slug": "security-devops",
   "label": "Security / Platform",
-  "role": "Security & Platform Engineer",
+  "cardNote": "🛡️ Security work that continues through the fix",
+  "role": "Software Developer — Security & Platform",
   "headline": [
-    "Security that continues",
-    "from evidence to verified remediation."
+    "I do not stop at reporting a vulnerability;",
+    "I follow it through the fix and check the result."
   ],
-  "summary": "I carry security findings from discovery and reproduction through remediation and verification. A report is not the endpoint: technical evidence, an executable correction path, and independent verification must accompany it.",
+  "summary": "A security report that only says a problem exists is not enough. I try to show the issue with a clear example, find a fix the technical team can apply, and then test the result again.",
   "accent": "#8a493f",
   "accentSoft": "#f0dfdc",
   "skillGroups": [
@@ -19,16 +20,16 @@
   "experienceOrder": ["security", "freelance", "company"],
   "experienceFocus": {
     "security": [
-      "Conducted security analysis, penetration testing, vulnerability assessment, reverse engineering, and patch development for government IT infrastructure.",
-      "Produced reproducible evidence and translated findings into fixes and verification steps that infrastructure stakeholders could execute."
+      "Performed security analysis, penetration testing, vulnerability assessment, and reverse engineering for government IT infrastructure, and wrote patches for some findings.",
+      "Prepared a repeatable example and check steps for each issue so the infrastructure team could apply the fix and measure the result."
     ],
     "freelance": [
-      "Apply security thinking across Windows, Linux, web, data, and hardware-backed solutions from initial architecture through integration and maintenance.",
-      "Use AI-assisted analysis where useful while reviewing outputs against system behavior, trust boundaries, and concrete evidence."
+      "Reviewed input handling, dependencies, authentication, secrets, and access boundaries in Windows, Linux, web, and embedded projects.",
+      "Used AI tools where useful, but checked their output against logs, real system behavior, and a repeatable test case."
     ],
     "company": [
-      "Applied architectural and operational judgment to distributed mobile and web systems backed by NoSQL data stores.",
-      "Shared responsibility for technical delivery, bringing risk, dependency, and failure behavior into product decisions."
+      "Worked on distributed mobile and web applications with NoSQL databases and took part in their design and operation.",
+      "Reviewed dependency risk, service access, and system behavior during failures as part of development and delivery."
     ]
   },
   "includePublication": false

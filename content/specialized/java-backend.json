@@ -1,12 +1,13 @@
 {
   "slug": "java-backend",
   "label": "Java Backend",
-  "role": "Senior Java Backend Engineer",
+  "cardNote": "☕ Services built to remain maintainable over time",
+  "role": "Java Backend Developer",
   "headline": [
-    "Durable Java services",
-    "with observable, explicit boundaries."
+    "Java services built for real workloads,",
+    "with failures that are visible and easier to fix."
   ],
-  "summary": "I design and implement backend services with explicit boundaries, evolvable contracts, and observable failure behavior. Architecture decisions account for data correctness, concurrency, testability, and real operating conditions together.",
+  "summary": "For Java services, I think beyond the successful request: what happens to the data when requests arrive together, where errors are recorded, and how an API change affects its clients. I bring tests and observability in early instead of waiting for a production problem.",
   "accent": "#7a5638",
   "accentSoft": "#eee3d8",
   "experienceRoles": {
@@ -21,16 +22,16 @@
   ],
   "experienceFocus": {
     "freelance": [
-      "Build backend and cross-platform software with reusable components, explicit integration boundaries, and technology selected around actual constraints.",
-      "Own requirements, architecture, implementation, debugging, and delivery while using AI-assisted workflows under review and test."
+      "Built Java backend services and shared components, choosing the framework and database around the needs of each project.",
+      "Worked from requirements and design through implementation and service debugging, using coding agents only with tests and code review."
     ],
     "security": [
-      "Use direct experience in vulnerability discovery and patch development to improve validation, dependency decisions, error handling, and service trust boundaries.",
-      "Translate technical findings into code-level correction and verification rather than separating security from delivery."
+      "Used vulnerability and patching experience in validation, error handling, dependency review, and service access boundaries.",
+      "Fixed security issues in code and configuration and wrote test cases to check the result."
     ],
     "company": [
-      "Developed scalable distributed mobile and web systems using NoSQL data stores and participated in technical direction.",
-      "Worked across integration and delivery constraints that inform pragmatic decisions about service boundaries, consistency, and change."
+      "Worked on distributed mobile and web applications with NoSQL databases and took part in their technical decisions.",
+      "Designed and maintained APIs shared by several clients and coordinated data-model changes across them."
     ]
   },
   "projectKeys": ["sky-fw"],

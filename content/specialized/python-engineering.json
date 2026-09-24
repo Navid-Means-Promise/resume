@@ -1,12 +1,13 @@
 {
   "slug": "python-engineering",
   "label": "Python Engineering",
-  "role": "Senior Python Engineer",
+  "cardNote": "🐍 Tools and services that stay easy to understand",
+  "role": "Python Developer",
   "headline": [
-    "Maintainable Python delivery,",
-    "from requirements to dependable execution."
+    "Python tools, services, and data workflows",
+    "that stay easy to read, test, and change."
   ],
-  "summary": "I take Python projects from interface and data-model design through testing, packaging, and deployment. The goal is code with explicit input boundaries, understandable failure behavior, and a controlled path for change.",
+  "summary": "On Python projects, I usually start with inputs and the data model, then move through implementation, testing, packaging, and deployment. I try to keep the code straightforward and make failures easy to trace when they happen.",
   "accent": "#35688a",
   "accentSoft": "#dfeaf0",
   "experienceRoles": {
@@ -21,16 +22,16 @@
   ],
   "experienceFocus": {
     "freelance": [
-      "Use Python for web services, automation, data transformation, CLI tooling, integrations, and experimental work that can graduate into maintainable modules.",
-      "Own the path from requirements and interface design through validation, testing, deployment context, and operational refinement."
+      "Built web services, CLI tools, automation scripts, and data-transformation modules with Python.",
+      "Designed APIs and data models, validated inputs, and prepared projects for testing, deployment, and maintenance."
     ],
     "security": [
-      "Apply security-analysis and patch-development experience to input validation, dependency review, authentication boundaries, logging, and failure behavior.",
-      "Use reproducible cases and precise verification when diagnosing services and automation rather than relying on symptoms alone."
+      "Applied security experience to input handling, authentication, dependency review, logging, and application behavior during failures.",
+      "When debugging a service or script, I first make a test case that repeats the problem and run it again after the fix."
     ],
     "company": [
-      "Built distributed products and NoSQL-backed applications, experience that informs Python service boundaries and integration decisions.",
-      "Shared delivery responsibility from architecture through integration, balancing implementation speed with long-term changeability."
+      "Worked on distributed applications, NoSQL databases, and APIs shared by mobile and web clients.",
+      "Took part in design, implementation, integration debugging, and final delivery."
     ]
   },
   "projectKeys": ["args-dataclass"],

@@ -1,12 +1,13 @@
 {
   "slug": "ai-data",
   "label": "AI & Data",
-  "role": "AI & Data Science Engineer",
+  "cardNote": "🧪 From a useful question to a result you can measure",
+  "role": "AI & Data Developer",
   "headline": [
-    "From research questions",
-    "to evaluated AI systems."
+    "Start with the data and a useful question,",
+    "then test whether the model actually helps."
   ],
-  "summary": "I turn data-driven questions into reproducible, evaluable experiments. My focus is establishing baselines, analyzing failures, comparing results against explicit criteria, and turning research or experimental output into usable capabilities.",
+  "summary": "In AI and data projects, I first decide what should improve and how to measure it. Then I work through the data, model, and experiments, and turn the result into something that can be used and checked in a real tool or service.",
   "accent": "#6e4f83",
   "accentSoft": "#e9e0ed",
   "experienceRoles": {
@@ -20,16 +21,16 @@
   ],
   "experienceFocus": {
     "freelance": [
-      "Use Python for data exploration, model experiments, automation, inference APIs, and reusable tooling, with software boundaries designed beyond the notebook.",
-      "Integrate AI capabilities into wider products while keeping inputs, evaluation criteria, failure behavior, and human review explicit."
+      "Used Python to explore data, test models, automate work, build inference APIs, and turn notebooks into testable modules.",
+      "Added AI features to applications with clear inputs and failure behavior, while keeping the result open to user review."
     ],
     "security": [
-      "Bring an adversarial and evidence-oriented mindset to data leakage, unsafe inputs, dependency risk, model behavior, and validation.",
-      "Turn ambiguous findings into reproducible cases and concrete remediation—the same discipline required for trustworthy AI evaluation."
+      "My security background helps me pay attention to data leakage, unsafe input, risky dependencies, and unexpected model behavior.",
+      "I build repeatable examples for failures instead of treating one unusually good or bad model output as a conclusion."
     ],
     "company": [
-      "Built distributed mobile and web applications, creating a practical foundation for serving data- and model-driven capabilities inside larger products.",
-      "Shared ownership of architecture and delivery, connecting experimentation to operational constraints and maintainable integration."
+      "Worked on mobile and web applications, backend services, and NoSQL databases—the surrounding pieces needed to put a model into a real product.",
+      "Shared responsibility for design, error logging, and delivery, and learned to keep data-driven features in step with the rest of the application."
     ]
   },
   "includePublication": true

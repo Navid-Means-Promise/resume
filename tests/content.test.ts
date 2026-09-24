@@ -18,5 +18,9 @@ test("all localized content satisfies the shared contract", async () => {
     );
     assert.ok(content.profile.experience.length > 0);
     assert.ok(content.profile.education.length > 0);
+    for (const edition of content.editions) {
+      assert.match(edition.cardNote, /^\p{Extended_Pictographic}\uFE0F?/u);
+      assert.doesNotMatch(edition.role, /(?:\bSenior\b|مهندس ارشد)/u);
+    }
   }
 });

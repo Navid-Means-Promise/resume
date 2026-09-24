@@ -1,12 +1,13 @@
 {
   "slug": "embedded-systems",
   "label": "Embedded Systems & Electronics",
-  "role": "Embedded Systems & Electronics Engineer",
+  "cardNote": "🔌 Where software has to meet the physical world",
+  "role": "Embedded Systems & Electronics Developer",
   "headline": [
-    "Complete device development,",
-    "from circuit design to hardware test."
+    "Circuit, board, and device software",
+    "developed together and tested on real hardware."
   ],
-  "summary": "I take device development from requirements and hardware design through device software, prototype bring-up, and final test. Design decisions are checked against real hardware behavior, measurement, and debugging evidence.",
+  "summary": "On device projects, I do not treat software and hardware as separate jobs. I turn the requirements into a circuit, interfaces, and software, bring up the prototype, and use measurement and debugging until the device works reliably in real conditions.",
   "accent": "#567043",
   "accentSoft": "#e2eadb",
   "skillGroups": [
@@ -24,16 +25,16 @@
   },
   "experienceFocus": {
     "freelance": [
-      "Owned electronics design, device-interface decisions, and configuration tooling across Windows, Linux, and web environments.",
-      "Built and brought up prototypes, debugging circuits, firmware, and operating-system behavior until the device operated reliably."
+      "Designed electronics and device interfaces and built configuration tools for Windows, Linux, and the web.",
+      "Built and brought up prototypes and debugged the circuit, firmware, and operating system until the device behaved reliably."
     ],
     "security": [
-      "Conducted security analysis, penetration testing, vulnerability assessment, reverse engineering, and patch development for government IT infrastructure.",
-      "Produced reproducible evidence and verification steps so infrastructure teams could evaluate each remediation."
+      "Performed security analysis, penetration testing, and vulnerability assessment for government infrastructure and wrote patches for some issues.",
+      "Prepared repeatable examples and check steps so the infrastructure team could test each fix themselves."
     ],
     "company": [
-      "Developed distributed mobile and web applications backed by NoSQL databases and service APIs.",
-      "Shared responsibility for architecture, implementation, integration debugging, and final delivery."
+      "Worked on mobile and web applications with NoSQL databases and service APIs.",
+      "Took part in design, implementation, integration debugging, and final delivery."
     ]
   },
   "projectKeys": ["license-hid"],

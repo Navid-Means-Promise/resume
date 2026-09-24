@@ -230,6 +230,7 @@ function parseEdition(value: unknown, location: string, expectedSlug: EditionSlu
   return {
     slug,
     label: stringAt(item.label, `${location}.label`),
+    cardNote: stringAt(item.cardNote, `${location}.cardNote`),
     role: stringAt(item.role, `${location}.role`),
     headline: [headline[0]!, headline[1]!],
     summary: stringAt(item.summary, `${location}.summary`),

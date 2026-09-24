@@ -60,6 +60,7 @@ export interface SkillGroup {
 export interface ResumeEdition {
   slug: string;
   label: string;
+  cardNote: string;
   role: string;
   headline: [string, string];
   summary: string;

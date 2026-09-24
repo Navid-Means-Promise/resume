@@ -449,16 +449,11 @@ function renderLibrary(context: BuildContext): string {
   const { assetVersions, editions, locale, localeOutput, profile } = context;
   const strings = locale.strings;
   const assetPrefix = localeOutput.outputPrefix ? ".." : ".";
-  const cards = editions
-    .map((edition, index) => {
-      const editionKicker = locale.code === "fa"
-        ? `${strings.editionWord}ٔ ${edition.label}`
-        : `${edition.label} · ${strings.editionWord}`;
-      return `
+  const renderCard = (edition: ResumeEdition, index: number): string => `
         <article class="edition-card" style="--card-accent: ${escapeHtml(edition.accent)}">
           <div class="edition-card-index" aria-hidden="true">${String(index + 1).padStart(2, "0")}</div>
           <div class="edition-card-copy">
-            <p class="section-kicker">${renderLocalizedText(editionKicker, locale.direction)}</p>
+            <p class="section-kicker">${renderLocalizedText(edition.cardNote, locale.direction)}</p>
             <h3>${renderLocalizedText(edition.role, locale.direction)}</h3>
             <p>${renderLocalizedText(edition.headline.join(" "), locale.direction)}</p>
             <div class="edition-actions">
@@ -467,7 +462,12 @@ function renderLibrary(context: BuildContext): string {
             </div>
           </div>
         </article>`;
-    })
+  const generalEdition = editions.find(({ slug }) => slug === "general");
+  if (!generalEdition) throw new Error("Missing general resume edition");
+  const generalCard = renderCard(generalEdition, editions.indexOf(generalEdition));
+  const specializedCards = editions
+    .filter(({ slug }) => slug !== "general")
+    .map((edition) => renderCard(edition, editions.indexOf(edition)))
     .join("");
   const libraryReplacements = { location: profile.location, name: profile.name };
   const libraryEyebrow = formatLocalized(strings.libraryEyebrow, libraryReplacements);
@@ -520,7 +520,8 @@ function renderLibrary(context: BuildContext): string {
         <h2 id="editions-heading">${focusedEditionsHeading}</h2>
         <p>${renderLocalizedText(strings.libraryHint, locale.direction)}</p>
       </div>
-      <div class="edition-grid">${cards}</div>
+      <div class="featured-edition">${generalCard}</div>
+      <div class="edition-grid">${specializedCards}</div>
     </section>
 
     <footer class="library-footer">

@@ -1,16 +1,17 @@
 {
   "slug": "typescript-fullstack",
   "label": "Full-stack TypeScript",
-  "role": "مهندس ارشد Full-stack TypeScript",
+  "cardNote": "🧩 یک زبان مشترک از رابط کاربری تا سرویس و داده",
+  "role": "توسعه‌دهندهٔ Full-stack با TypeScript",
   "headline": [
-    "توسعهٔ یکپارچهٔ محصول با TypeScript؛",
-    "از رابط کاربری تا سرویس و مدل داده."
+    "با TypeScript بخش‌های مختلف محصول را به هم وصل می‌کنم؛",
+    "از رابط کاربری تا API و مدل داده، با قراردادهای روشن."
   ],
-  "summary": "محصولات TypeScript را با قراردادهای صریح میان رابط کاربری، منطق برنامه، سرویس و داده توسعه می‌دهم. تمرکزم بر جلوگیری از ناسازگاری میان اجزا و کنترل تغییرات با Validation و تست است.",
+  "summary": "در پروژه‌های TypeScript روی فاصلهٔ میان Frontend، Backend و داده حساس‌ام؛ بیشتر خطاهای وقت‌گیر همان‌جا شکل می‌گیرند. نوع‌ها، Validation و تست را به کار می‌گیرم تا تغییر یک بخش، بخش‌های دیگر را بی‌خبر خراب نکند.",
   "accent": "#315f78",
   "accentSoft": "#dde8ed",
   "experienceRoles": {
-    "freelance": "توسعه‌دهندهٔ TypeScript به‌صورت فریلنسر"
+    "freelance": "توسعه‌دهندهٔ مستقل TypeScript"
   },
   "skillGroups": [
     {"name": "زبان و Frontend", "items": ["TypeScript", "React", "Next.js", "HTML / CSS", "Web APIs", "OOP", "Generics", "Utility Types"]},
@@ -23,16 +24,16 @@
   ],
   "experienceFocus": {
     "freelance": [
-      "توسعهٔ اپلیکیشن‌های وب، سرویس‌های Node.js و نرم‌افزارهای Desktop و Mobile با TypeScript.",
-      "طراحی API و Data Model، تنظیم Build، دیباگ خطاهای Runtime و استفاده از Coding Agentها برای پیاده‌سازی، تست و Code Review."
+      "با TypeScript اپلیکیشن وب، سرویس Node.js و نرم‌افزار Desktop و Mobile ساخته‌ام.",
+      "API و مدل داده را طراحی کرده‌ام، Build را تنظیم کرده‌ام و خطاهای Runtime را پیدا کرده‌ام؛ از Coding Agentها هم زیر پوشش تست و بازبینی کد استفاده می‌کنم."
     ],
     "security": [
-      "استفاده از تجربهٔ تحلیل آسیب‌پذیری برای پیاده‌سازی Input Validation و Authorization، بررسی Dependencyها، مدیریت Secret و تعریف Trust Boundary میان Browser و Backend.",
-      "ساخت Test Case قابل بازتولید برای مشکلات امنیتی و رفع آن‌ها در کد و Configuration پروژه."
+      "تجربهٔ امنیت را در بررسی ورودی، Authorization، وابستگی‌ها، Secretها و مرز میان Browser و Backend به کار گرفته‌ام.",
+      "برای مشکلات امنیتی Test Case می‌نویسم و اصلاح را هم در کد و هم در تنظیمات پروژه بررسی می‌کنم."
     ],
     "company": [
-      "توسعهٔ اپلیکیشن‌های توزیع‌شدهٔ موبایل و وب با Databaseهای NoSQL و مشارکت در معماری و تحویل.",
-      "نگهداری APIهای مشترک میان چند Client و مدیریت تغییرات Data Model و قراردادهای سرویس."
+      "روی اپلیکیشن‌های توزیع‌شدهٔ موبایل و وب با Databaseهای NoSQL کار کردم و در طراحی و تحویل آن‌ها شریک بودم.",
+      "APIهای مشترک چند Client را نگهداری کردم و تغییرات مدل داده و قراردادهای سرویس را میان آن‌ها هماهنگ نگه داشتم."
     ]
   },
   "projectKeys": ["dream-river"],

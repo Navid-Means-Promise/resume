@@ -1,12 +1,13 @@
 {
   "slug": "typescript-fullstack",
   "label": "TypeScript Full-stack",
-  "role": "Senior TypeScript Product Engineer",
+  "cardNote": "🧩 One language across interface, service, and data",
+  "role": "Full-stack TypeScript Developer",
   "headline": [
-    "TypeScript product delivery",
-    "with type-safe contracts between components."
+    "TypeScript across the whole product,",
+    "from the interface to the API and data model."
   ],
-  "summary": "I develop TypeScript products with explicit contracts between the interface, application logic, services, and data. The focus is preventing cross-component drift and controlling change through validation and tests.",
+  "summary": "In TypeScript projects, I pay close attention to the gaps between frontend, backend, and data, because that is where many expensive bugs begin. I use types, validation, and tests so a change in one part does not quietly break another.",
   "accent": "#315f78",
   "accentSoft": "#dde8ed",
   "experienceRoles": {
@@ -21,16 +22,16 @@
   ],
   "experienceFocus": {
     "freelance": [
-      "Build web, Node.js, desktop, and cross-platform products with explicit contracts between interface, domain logic, persistence, and external integrations.",
-      "Own architecture, implementation, build automation, debugging, and refinement while using AI agents to expand delivery speed and review coverage."
+      "Built web applications, Node.js services, and desktop and mobile software with TypeScript.",
+      "Designed APIs and data models, configured builds, and debugged runtime problems; I also use coding agents under tests and code review."
     ],
     "security": [
-      "Carry direct vulnerability-analysis and patch-development experience into validation, dependency review, authorization, secrets handling, and browser/service trust boundaries.",
-      "Treat reproducibility and remediation as part of engineering, not a separate security hand-off."
+      "Applied security experience to input validation, authorization, dependencies, secrets, and the boundary between browser and backend.",
+      "Wrote repeatable test cases for security issues and checked fixes in both code and project configuration."
     ],
     "company": [
-      "Developed distributed mobile and web products backed by NoSQL data stores and participated in technical direction and delivery.",
-      "Worked through cross-client integration and change over time—the conditions where shared types and stable contracts create real leverage."
+      "Worked on distributed mobile and web applications with NoSQL databases and took part in their design and delivery.",
+      "Maintained APIs shared by several clients and kept data-model and service-contract changes coordinated across them."
     ]
   },
   "projectKeys": ["dream-river"],

@@ -5,37 +5,37 @@
   "phone": "+98 939 070 1024",
   "phoneHref": "+989390701024",
   "email": "Navid.Means.Promise@gmail.com",
-  "availability": "Remote-first · Open to international collaboration",
+  "availability": "Available for remote and international collaboration",
   "careerStart": "2009",
   "codingStart": "2005",
   "principles": [
-    "Deep understanding before implementation",
-    "AI-assisted work with human review and tested outputs",
-    "Clear communication and patient mentoring",
-    "Mutual respect and meaningful work",
-    "Remote collaboration by default"
+    "Understand the problem before writing the solution",
+    "Use AI tools, but review and test what they produce",
+    "Communicate clearly and leave knowledge with the team",
+    "Choose respectful teams and work worth doing",
+    "Take responsibility for the work through delivery"
   ],
   "experience": [
     {
       "id": "freelance",
-      "role": "Freelance Software Engineer",
+      "role": "Independent Software Developer",
       "organization": "Independent",
       "period": "2009 — Present",
       "bullets": [
-        "Own independent engagements from ambiguous requirements and architecture through implementation, debugging, delivery, and long-term refinement across Windows, Linux, and web platforms.",
-        "In hardware-backed projects, owned board design, interface definition, and the coordinated development of device and application software.",
-        "Select languages, frameworks, data stores, and automation around the constraints of each problem instead of forcing one preferred stack."
+        "Since 2009, I have built independent projects for Windows, Linux, and the web, usually staying involved from the first requirements discussion through implementation, debugging, and delivery.",
+        "Some projects included custom hardware, so the work covered board design, device interfaces, device software, and the user-facing application.",
+        "I choose the language, framework, database, and automation to fit the project instead of forcing every problem into one preferred stack."
       ]
     },
     {
       "id": "security",
-      "role": "Software Security Engineer",
+      "role": "Software Security Specialist",
       "organization": "Government sector",
       "period": "2015 — 2021",
       "bullets": [
-        "Performed security analysis, penetration testing, vulnerability assessment, and patch development for government IT infrastructure.",
-        "Turned findings into reproducible technical evidence, actionable remediation, and fixes that infrastructure stakeholders could apply and verify.",
-        "Connected application, network, dependency, and operational risk rather than treating security as an isolated reporting activity."
+        "Worked on security analysis, penetration testing, vulnerability assessment, and patch development for government IT infrastructure.",
+        "For each issue, I prepared a repeatable example so the technical team could reproduce it, apply the fix, and check the result.",
+        "The work covered more than application code; networks, dependencies, configuration, and operational behavior were often part of the same problem."
       ]
     },
     {
@@ -44,9 +44,9 @@
       "organization": "Radin Andish · Private company",
       "period": "2017 — 2022",
       "bullets": [
-        "Co-founded the company and shared responsibility for technical direction, implementation, problem resolution, and delivery.",
-        "Developed scalable distributed applications for mobile and web using NoSQL databases and service-oriented boundaries.",
-        "Carried projects through integration and the successful completion of the company’s final obligations."
+        "Co-founded the company and worked directly on technical decisions, implementation, problem solving, and delivery.",
+        "Built mobile and web applications that used service APIs and NoSQL databases and had to stay coordinated across several parts.",
+        "After the company stopped operating, I continued the remaining projects until its final delivery commitments were complete."
       ]
     }
   ],
@@ -66,18 +66,18 @@
     "sky-fw": {
       "name": "Sky-FW",
       "url": "https://github.com/SkyFW/SkyBase",
-      "description": "An open-source Java framework exploring reusable foundations for client- and server-side development, integration boundaries, and less repetitive application delivery.",
+      "description": "An open-source Java framework with shared pieces for client and server applications, built to avoid rewriting the same project plumbing each time.",
       "tags": ["Java", "Framework", "Client/server", "Reusable architecture"]
     },
     "dream-river": {
       "name": "Dream-River",
       "url": "https://github.com/Imaginative-Arts/DreamRiver",
-      "description": "An open-source TypeScript framework for building audio-first games with Web Audio APIs, turning low-level audio primitives into a clearer application model.",
+      "description": "An open-source TypeScript framework for audio-first games that makes Web Audio APIs and sound management easier to work with.",
       "tags": ["TypeScript", "Web Audio", "Accessibility"]
     },
     "args-dataclass": {
       "name": "ArgsDataClass",
-      "description": "A focused Python utility that maps command-line arguments into data classes, reducing repetitive parsing code while preserving typed, inspectable configuration.",
+      "description": "A small Python utility that maps command-line arguments to data classes and cuts down the code needed to parse and validate input.",
       "tags": ["Python", "CLI", "Data classes"]
     },
     "license-hid": {
@@ -92,11 +92,11 @@
     "venue": "1st International Biennial Conference of Artificial Intelligence and Data Science · Persian Gulf University",
     "year": "2024",
     "url": "https://en.civilica.com/doc/2008135/",
-    "context": "Accepted research in generative AI that connects diffusion-model experimentation with a broader practice of reading, evaluating, and applying academic work."
+    "context": "This paper tests a method for retraining diffusion models and evaluates it on a generative AI problem."
   },
   "academicProfile": {
-    "overview": "Academic inquiry is a continuing part of my engineering practice, not a single publication. I use research to question assumptions, compare methods, and connect practical AI work to stronger evidence.",
-    "continuousPractice": "I continually review academic papers and technical literature in artificial intelligence and data science, and participate in university workshops and academic sessions to keep research and implementation connected.",
-    "ongoingPublications": "Beyond the accepted conference paper below, additional manuscripts are under review and progressing through the publication process."
+    "overview": "For AI work, I do not rely on tool documentation alone. I read papers, compare methods, and use that research to choose models and design experiments.",
+    "continuousPractice": "I keep up with papers in AI and data science and attend university workshops or academic sessions when the subject is close to my work.",
+    "ongoingPublications": "Alongside the accepted paper below, I have submitted several other manuscripts to international journals and they are still under review."
   }
 }
