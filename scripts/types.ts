@@ -61,6 +61,7 @@ export interface ResumeEdition {
   slug: string;
   label: string;
   cardNote: string;
+  cardTitle?: string;
   role: string;
   headline: [string, string];
   summary: string;

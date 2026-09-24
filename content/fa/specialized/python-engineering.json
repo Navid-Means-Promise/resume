@@ -14,10 +14,10 @@
     "freelance": "توسعه‌دهندهٔ مستقل Python"
   },
   "skillGroups": [
-    {"name": "زبان و طراحی Python", "items": ["Python", "Type Hints", "Data Classes", "Pydantic", "OOP", "Protocols", "Asyncio", "Context Managers"]},
+    {"name": "زبان و طراحی Python", "items": ["Python", "Type Hints / TypedDict", "Data Classes", "Pydantic", "OOP", "Protocols", "Asyncio", "Context Managers"]},
     {"name": "وب و API", "items": ["FastAPI", "آشنایی با Django", "Flask", "Celery", "HTTPX", "REST / OpenAPI"]},
     {"name": "Database و Persistence", "items": ["SQLAlchemy", "Alembic", "PostgreSQL", "Redis"]},
-    {"name": "داده و اتوماسیون", "items": ["Pandas", "NumPy", "آشنایی با Polars", "Jupyter", "گردش‌کار ETL", "اتوماسیون فایل و Process", "AWS Lambda", "Queue", "Webhook"]},
+    {"name": "داده و اتوماسیون", "items": ["Pandas", "NumPy", "آشنایی با Polars", "Jupyter", "گردش‌کار ETL", "اتوماسیون فایل و Subprocess", "JSON Policy Engine", "AWS Lambda", "Queue", "Webhook"]},
     {"name": "تست و کیفیت", "items": ["Pytest", "آشنایی با Hypothesis", "mypy", "Ruff"]},
     {"name": "Packaging و تحویل", "items": ["Packaging", "طراحی CLI", "Poetry / uv", "Linux", "GitHub Actions", "Docker"]},
     {"name": "قابلیت‌های AI در Python", "items": ["LLM APIs", "RAG / Embeddings", "Model Serving"]}
@@ -36,6 +36,6 @@
       "در طراحی، پیاده‌سازی، رفع مشکلات اتصال بخش‌ها و تحویل نهایی پروژه‌ها شریک بودم."
     ]
   },
-  "projectKeys": ["args-dataclass"],
+  "projectKeys": ["args-dataclass", "claudio"],
   "includePublication": false
 }

@@ -85,6 +85,63 @@
       "kind": "Hardware-backed system",
       "description": "A Linux HID license-token prototype with Windows and Linux tools for device configuration, diagnostics, and operation.",
       "tags": ["Embedded Linux", "HID", "Electronics", "Host integration"]
+    },
+    "connected-products": {
+      "name": "Cross-platform products with connected hardware",
+      "kind": "Software and hardware products",
+      "description": "Two bilingual web and Android products with one shared UI, server APIs, AI features, and ESP32 devices: one for daily planning and one for an interactive audio experience.",
+      "tags": ["TypeScript", "Lit", "Ionic / Capacitor", "Fastify", "Three.js / WebGL", "ESP-IDF"]
+    },
+    "service-platforms": {
+      "name": "Service and case-management platforms",
+      "kind": "Service platforms",
+      "description": "Several bilingual systems for appointments, clinical records, consultation, and legal calculations with SMS login, role-based access, persistence, and unit and browser tests.",
+      "tags": ["PHP 8.4", "Laravel 13", "SQLite / Eloquent", "OTP / SMS", "RBAC", "PHPUnit / Playwright"]
+    },
+    "ai-legal-platform": {
+      "name": "Multi-model consultation platform",
+      "kind": "AI platform",
+      "description": "A bilingual conversation platform with a multi-stage pipeline for answers, peer critique, revision, and scoring, plus durable run state, round-boundary resume, and human review.",
+      "tags": ["NestJS", "Lit", "TypeORM", "PostgreSQL / SQLite", "OpenRouter", "Jest / Playwright"]
+    },
+    "hotpaas": {
+      "name": "HoTPaaS",
+      "url": "https://github.com/Navid-Means-Promise/HoTPaaS",
+      "description": "An open-source runtime between PaaS and FaaS that accepts, builds, and runs projects over HTTP and exposes process input and output through an API.",
+      "tags": ["TypeScript", "Node.js / Express", "Docker", "Process management", "REST API"]
+    },
+    "midnight-captain": {
+      "name": "Midnight Captain",
+      "description": "A lightweight native Linux and container-network service dashboard with a flicker-free ANSI interface and a ports-and-adapters architecture.",
+      "tags": ["Object Pascal", "Free Pascal", "Linux / procfs", "Podman", "ANSI TUI"]
+    },
+    "vault-index": {
+      "name": "Vault Index",
+      "description": "An offline-first workshop inventory tool with bilingual UI, IndexedDB persistence, and a configurable WebGL display that scales back for reduced motion and software rendering.",
+      "tags": ["TypeScript", "Lit", "WebGL", "IndexedDB", "Web Audio", "Vitest / Playwright"]
+    },
+    "claudio": {
+      "name": "Claudio",
+      "url": "https://github.com/Navid-Means-Promise/claudio",
+      "description": "A single-file Python plugin that evaluates coding-agent tool calls against JSON policies, splits compound shell commands, and records each decision.",
+      "tags": ["Python 3.11", "TypedDict", "Policy engine", "JSON", "Audit logging"]
+    },
+    "ytogh": {
+      "name": "YToGH",
+      "description": "A Rust CLI and library that dispatches file-download workflows through GitHub Actions, follows their state, retrieves chunks, and exposes Android bindings through JNI.",
+      "tags": ["Rust", "Tokio", "Reqwest / Rustls", "GitHub API / Actions", "Clap", "Android JNI"]
+    },
+    "ble-hid-lab": {
+      "name": "ESP32-C3 BLE HID lab",
+      "kind": "Hardware and firmware lab",
+      "description": "BLE keyboard firmware with advertising, a GATT service, HID reports, character-to-keycode mapping, and FreeRTOS tasks, built and flashed through a repeatable container toolchain.",
+      "tags": ["ESP-IDF", "C / C++", "BLE / GATT", "HID", "FreeRTOS", "CMake / Ninja"]
+    },
+    "vlc-arm-fix": {
+      "name": "VLC · 32-bit ARM SIGBUS fix",
+      "kind": "Open-source contribution",
+      "description": "Fixed a video-output alignment fault on armhf by aligning internal storage to max_align_t; the crash came from 64-bit atomics inside pthread_cond_t.",
+      "tags": ["C", "ARM / armhf", "glibc / pthreads", "Memory alignment", "Debugging"]
     }
   },
   "publication": {

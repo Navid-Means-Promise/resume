@@ -18,6 +18,15 @@ test("all localized content satisfies the shared contract", async () => {
     );
     assert.ok(content.profile.experience.length > 0);
     assert.ok(content.profile.education.length > 0);
+    const referencedProjects = new Set(
+      content.editions.flatMap((edition) => edition.projectKeys ?? []),
+    );
+    for (const projectKey of Object.keys(content.profile.projects)) {
+      assert.ok(
+        referencedProjects.has(projectKey),
+        `project ${projectKey} is not referenced by any ${content.locale.code} resume`,
+      );
+    }
     for (const edition of content.editions) {
       assert.match(edition.cardNote, /^\p{Extended_Pictographic}\uFE0F?/u);
       assert.doesNotMatch(edition.role, /(?:\bSenior\b|مهندس ارشد)/u);

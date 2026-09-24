@@ -14,10 +14,10 @@
     "freelance": "Freelance TypeScript Developer"
   },
   "skillGroups": [
-    {"name": "Language, UI & application", "items": ["TypeScript", "Node.js", "React", "Next.js", "HTML / CSS", "Web APIs", "OOP", "Generics", "Utility types", "Schema-first validation"]},
-    {"name": "Services, data & contracts", "items": ["Express.js", "NestJS familiarity", "Fastify familiarity", "REST / OpenAPI", "GraphQL concepts", "WebSocket", "Prisma", "TypeORM", "Zod", "PostgreSQL", "MongoDB", "Redis"]},
-    {"name": "Product surfaces & tooling", "items": ["Electron", "Apache Cordova", "Web Audio API", "AR.js", "Vite", "Webpack", "NPM / pnpm", "Monorepo concepts", "GitHub Actions", "Docker"]},
-    {"name": "Quality and observability", "items": ["Vitest / Jest", "Playwright", "Testing Library", "ESLint", "OpenTelemetry", "Structured logging"]},
+    {"name": "Language, UI & application", "items": ["TypeScript", "Node.js", "Lit / Web Components", "React", "Next.js", "HTML / CSS", "Web APIs", "OOP", "Generics", "Utility types", "Schema-first validation"]},
+    {"name": "Services, data & contracts", "items": ["Express.js", "NestJS", "Fastify", "REST / OpenAPI", "GraphQL concepts", "WebSocket", "Prisma", "TypeORM", "Zod", "PostgreSQL", "SQLite", "MongoDB", "Redis", "IndexedDB"]},
+    {"name": "Product surfaces & tooling", "items": ["Ionic / Capacitor", "Electron", "Apache Cordova", "Three.js / WebGL", "Web Audio API", "AR.js", "Vite", "Webpack", "NPM / pnpm", "Monorepo concepts", "GitHub Actions", "Docker / Podman"]},
+    {"name": "Quality and observability", "items": ["Vitest / Jest", "Playwright", "Testing Library", "ESLint", "OpenTelemetry", "Structured logging", "Performance budgets"]},
     {"name": "AI capabilities in TypeScript", "items": ["AI SDKs", "LLM APIs", "RAG / embeddings", "Transformers.js / TensorFlow.js"]}
   ],
   "experienceFocus": {
@@ -34,6 +34,6 @@
       "Maintained APIs shared by several clients and kept data-model and service-contract changes coordinated across them."
     ]
   },
-  "projectKeys": ["dream-river"],
+  "projectKeys": ["dream-river", "connected-products", "vault-index"],
   "includePublication": false
 }

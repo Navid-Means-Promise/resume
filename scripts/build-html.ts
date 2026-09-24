@@ -464,7 +464,7 @@ function renderLibrary(context: BuildContext): string {
           <div class="edition-card-index" aria-hidden="true">${localizeDigits(String(index + 1).padStart(2, "0"), locale.direction)}</div>
           <div class="edition-card-copy">
             <p class="section-kicker">${renderLocalizedText(edition.cardNote, locale.direction)}</p>
-            <h3>${renderLocalizedText(edition.role, locale.direction)}</h3>
+            <h3>${renderLocalizedText(edition.cardTitle ?? edition.role, locale.direction)}</h3>
             <p>${renderLocalizedText(edition.headline.join(" "), locale.direction)}</p>
             <div class="edition-actions">
               <a class="open-label" data-primary-action href="./${escapeHtml(edition.slug)}/">${renderLocalizedText(strings.openResume, locale.direction)}</a>

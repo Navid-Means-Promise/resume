@@ -12,11 +12,11 @@
   "accentSoft": "#e2eadb",
   "skillGroups": [
     {"name": "Embedded Linux", "items": ["C / C++", "Embedded Linux", "Buildroot", "Yocto Project", "Linux HID", "مفاهیم DeviceTree", "Boot / Services", "Cross-compilation"]},
-    {"name": "میکروکنترلر و RTOS", "items": ["ESP32 / ESP8266", "آشنایی با ESP-IDF", "مفاهیم ARM Cortex-M", "آشنایی با FreeRTOS", "آشنایی با Zephyr"]},
-    {"name": "پروتکل‌ها و رابط‌های سخت‌افزاری", "items": ["GPIO", "UART", "I2C", "SPI", "مفاهیم CAN", "MQTT", "BLE / Wi-Fi"]},
+    {"name": "میکروکنترلر و RTOS", "items": ["ESP32 / ESP32-C3 / ESP8266", "ESP-IDF", "مفاهیم ARM Cortex-M", "FreeRTOS", "آشنایی با Zephyr"]},
+    {"name": "پروتکل‌ها و رابط‌های سخت‌افزاری", "items": ["GPIO", "UART", "I2C", "SPI", "مفاهیم CAN", "MQTT", "BLE / GATT / HID", "Wi-Fi", "WS2812"]},
     {"name": "طراحی سخت‌افزار", "items": ["Schematic Capture", "طراحی PCB", "KiCad", "EasyEDA", "سنسور", "عملگر", "Hardware Interfacing", "تحلیل Datasheet"]},
     {"name": "تست و دیباگ سخت‌افزار", "items": ["Instrumentation", "Prototype Debugging", "مفاهیم HIL", "مفاهیم JTAG / SWD"]},
-    {"name": "Build و تست نرم‌افزار دستگاه", "items": ["مفاهیم CMake / Build", "ابزار تست Python"]},
+    {"name": "Build و تست نرم‌افزار دستگاه", "items": ["CMake / Ninja", "Cross-compilation", "Podman Toolchains", "ابزار تست Python", "Android JNI", "GitHub Actions"]},
     {"name": "امنیت دستگاه", "items": ["Trust Boundary دستگاه", "مفاهیم Secure Update"]},
     {"name": "Edge AI", "items": ["TinyML", "آشنایی با TensorFlow Lite Micro", "مفاهیم ONNX"]}
   ],
@@ -37,6 +37,6 @@
       "در طراحی، برنامه‌نویسی، رفع مشکلات اتصال بخش‌ها و تحویل نهایی پروژه‌ها شریک بودم."
     ]
   },
-  "projectKeys": ["license-hid"],
+  "projectKeys": ["license-hid", "ble-hid-lab", "vlc-arm-fix"],
   "includePublication": false
 }

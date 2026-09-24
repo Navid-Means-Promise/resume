@@ -227,10 +227,14 @@ function parseEdition(value: unknown, location: string, expectedSlug: EditionSlu
   const experienceRoles = stringRecordAt(item.experienceRoles, `${location}.experienceRoles`);
   const experienceFocus = stringArrayRecordAt(item.experienceFocus, `${location}.experienceFocus`);
   const projectKeys = optionalStringArrayAt(item.projectKeys, `${location}.projectKeys`);
+  const cardTitle = item.cardTitle === undefined
+    ? undefined
+    : stringAt(item.cardTitle, `${location}.cardTitle`);
   return {
     slug,
     label: stringAt(item.label, `${location}.label`),
     cardNote: stringAt(item.cardNote, `${location}.cardNote`),
+    ...(cardTitle === undefined ? {} : { cardTitle }),
     role: stringAt(item.role, `${location}.role`),
     headline: [headline[0]!, headline[1]!],
     summary: stringAt(item.summary, `${location}.summary`),

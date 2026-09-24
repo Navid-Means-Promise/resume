@@ -85,6 +85,63 @@
       "kind": "پروژهٔ سخت‌افزار و نرم‌افزار",
       "description": "نمونهٔ اولیهٔ یک توکن لایسنس مبتنی بر Linux HID، همراه با ابزارهای Windows و Linux برای تنظیم، عیب‌یابی و کار با دستگاه.",
       "tags": ["Embedded Linux", "HID", "الکترونیک", "Windows / Linux"]
+    },
+    "connected-products": {
+      "name": "محصولات چندسکویی متصل به سخت‌افزار",
+      "kind": "محصول نرم‌افزاری و سخت‌افزاری",
+      "description": "دو محصول فارسی/انگلیسی برای وب و Android با UI مشترک، API سمت سرور، قابلیت‌های AI و دستگاه‌های ESP32؛ یکی برای برنامه‌ریزی روزانه و دیگری برای یک تجربهٔ صوتی تعاملی.",
+      "tags": ["TypeScript", "Lit", "Ionic / Capacitor", "Fastify", "Three.js / WebGL", "ESP-IDF"]
+    },
+    "service-platforms": {
+      "name": "سامانه‌های خدماتی و پرونده‌محور",
+      "kind": "سامانه‌های خدماتی",
+      "description": "چند سامانهٔ فارسی/انگلیسی برای نوبت‌دهی، پروندهٔ درمانی، مشاوره و محاسبات حقوقی با ورود پیامکی، سطح دسترسی، پایگاه داده و آزمون‌های واحد و مرورگر.",
+      "tags": ["PHP 8.4", "Laravel 13", "SQLite / Eloquent", "OTP / SMS", "RBAC", "PHPUnit / Playwright"]
+    },
+    "ai-legal-platform": {
+      "name": "پلتفرم مشاوره با داوری چندمدلی",
+      "kind": "پلتفرم هوش مصنوعی",
+      "description": "پلتفرم گفت‌وگومحور دو زبانه با pipeline چندمرحله‌ای برای پاسخ، نقد متقابل، بازنگری و امتیازدهی چند مدل؛ همراه با ثبت وضعیت اجرا، ادامه از مرحلهٔ شکست و بازبینی انسانی.",
+      "tags": ["NestJS", "Lit", "TypeORM", "PostgreSQL / SQLite", "OpenRouter", "Jest / Playwright"]
+    },
+    "hotpaas": {
+      "name": "HoTPaaS",
+      "url": "https://github.com/Navid-Means-Promise/HoTPaaS",
+      "description": "یک runtime متن‌باز میان PaaS و FaaS که پروژه را از طریق HTTP دریافت می‌کند، می‌سازد و اجرا می‌کند و ورودی و خروجی process را در اختیار API می‌گذارد.",
+      "tags": ["TypeScript", "Node.js / Express", "Docker", "Process Management", "REST API"]
+    },
+    "midnight-captain": {
+      "name": "Midnight Captain",
+      "description": "داشبورد سبک مدیریت Linux و سرویس‌های شبکهٔ کانتینری با خروجی native کم‌حجم، رابط ANSI بدون flicker و معماری Ports & Adapters.",
+      "tags": ["Object Pascal", "Free Pascal", "Linux / procfs", "Podman", "ANSI TUI"]
+    },
+    "vault-index": {
+      "name": "Vault Index",
+      "description": "ابزار offline-first برای مدیریت موجودی کارگاه با رابط دو زبانه، ذخیره‌سازی IndexedDB و نمایشگر WebGL قابل تنظیم که در حالت reduced-motion یا اجرای نرم‌افزاری سبک‌تر می‌شود.",
+      "tags": ["TypeScript", "Lit", "WebGL", "IndexedDB", "Web Audio", "Vitest / Playwright"]
+    },
+    "claudio": {
+      "name": "Claudio",
+      "url": "https://github.com/Navid-Means-Promise/claudio",
+      "description": "افزونهٔ تک‌فایلی Python برای ارزیابی فراخوانی ابزارهای Coding Agent بر اساس ruleهای JSON، تفکیک فرمان‌های ترکیبی و ثبت نتیجهٔ تصمیم‌ها.",
+      "tags": ["Python 3.11", "TypedDict", "Policy Engine", "JSON", "Audit Logging"]
+    },
+    "ytogh": {
+      "name": "YToGH",
+      "description": "ابزار CLI و کتابخانهٔ Rust برای اجرای workflow دریافت فایل در GitHub Actions، دنبال‌کردن وضعیت، بازیابی قطعه‌ها و ارائهٔ binding برای Android از طریق JNI.",
+      "tags": ["Rust", "Tokio", "Reqwest / Rustls", "GitHub API / Actions", "Clap", "Android JNI"]
+    },
+    "ble-hid-lab": {
+      "name": "آزمایشگاه BLE HID روی ESP32-C3",
+      "kind": "پروژهٔ آزمایشگاهی سخت‌افزار و نرم‌افزار",
+      "description": "Firmware یک صفحه‌کلید BLE با advertising، سرویس GATT، گزارش‌های HID، نگاشت کاراکتر به keycode و taskهای FreeRTOS؛ build و flash نیز در ابزار کانتینری تکرارپذیر انجام می‌شود.",
+      "tags": ["ESP-IDF", "C / C++", "BLE / GATT", "HID", "FreeRTOS", "CMake / Ninja"]
+    },
+    "vlc-arm-fix": {
+      "name": "VLC · اصلاح خطای SIGBUS روی ARM 32-bit",
+      "kind": "مشارکت در پروژهٔ متن‌باز",
+      "description": "رفع خطای alignment در video output روی armhf با هم‌ترازکردن حافظهٔ ساختار داخلی بر اساس max_align_t؛ خطا از atomicهای 64 بیتی داخل pthread_cond_t ایجاد می‌شد.",
+      "tags": ["C", "ARM / armhf", "glibc / pthreads", "Memory Alignment", "Debugging"]
     }
   },
   "publication": {

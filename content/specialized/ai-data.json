@@ -15,9 +15,9 @@
   },
   "skillGroups": [
     {"name": "ML & deep-learning foundations", "items": ["PyTorch", "TensorFlow / Keras", "Scikit-learn", "XGBoost", "LightGBM", "JAX familiarity", "Model selection", "Feature engineering", "Cross-validation"]},
-    {"name": "Foundation & generative models", "items": ["HF Transformers", "Diffusers", "Datasets", "Accelerate", "PEFT / LoRA", "Sentence Transformers", "OpenAI-compatible APIs", "Ollama / vLLM", "Prompt & tool design"]},
+    {"name": "Foundation & generative models", "items": ["HF Transformers", "Diffusers", "Datasets", "Accelerate", "PEFT / LoRA", "Sentence Transformers", "Google GenAI", "OpenAI-compatible APIs", "OpenRouter", "Ollama / vLLM", "Prompt & tool design"]},
     {"name": "Data analysis & scientific Python", "items": ["NumPy", "Pandas", "Polars", "SciPy", "Jupyter", "Matplotlib", "Seaborn", "Plotly", "OpenCV", "SQL"]},
-    {"name": "LLM systems & MLOps", "items": ["RAG", "Agents", "Embeddings", "Vector search", "LangChain", "LlamaIndex", "FAISS / pgvector", "MLflow", "DVC concepts", "ONNX", "FastAPI / Docker"]}
+    {"name": "LLM systems & MLOps", "items": ["RAG", "Agents", "Multi-model consensus", "Structured outputs", "Embeddings", "Vector search / Orama", "LangChain", "LlamaIndex", "FAISS / pgvector", "MLflow", "DVC concepts", "ONNX", "FastAPI / Fastify / NestJS", "Docker"]}
   ],
   "experienceFocus": {
     "freelance": [
@@ -33,5 +33,6 @@
       "Shared responsibility for design, error logging, and delivery, and learned to keep data-driven features in step with the rest of the application."
     ]
   },
+  "projectKeys": ["ai-legal-platform", "connected-products"],
   "includePublication": true
 }

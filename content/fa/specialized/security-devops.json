@@ -11,11 +11,11 @@
   "accent": "#8a493f",
   "accentSoft": "#f0dfdc",
   "skillGroups": [
-    {"name": "تست نفوذ و Application Security", "items": ["تست نفوذ", "Metasploit", "OpenVAS", "OWASP Top 10", "OWASP ASVS", "Threat Modeling", "Secure Code Review", "Vulnerability Triage", "توسعهٔ پچ"]},
+    {"name": "تست نفوذ و Application Security", "items": ["تست نفوذ", "Metasploit", "OpenVAS", "OWASP Top 10", "OWASP ASVS", "Threat Modeling", "Secure Code Review", "Vulnerability Triage", "توسعهٔ پچ", "RBAC / JWT / OTP", "Security Headers"]},
     {"name": "مهندسی معکوس و تحلیل شبکه", "items": ["Ghidra", "مهندسی معکوس", "Wireshark", "Packet Analysis", "پروتکل‌های شبکه"]},
     {"name": "استاندارد و تحلیل ریسک", "items": ["ممیزی ISO/IEC 27001", "تحلیل ریسک", "آشنایی با Incident Analysis", "مستندسازی امنیت"]},
-    {"name": "Platform و Cloud", "items": ["Debian / Arch Linux", "Linux Hardening", "AWS S3 / Lambda / API Gateway", "Docker", "مفاهیم Kubernetes", "آشنایی با Terraform"]},
-    {"name": "امنیت CI/CD و Supply Chain", "items": ["GitHub Actions", "CI/CD", "Secrets Management", "SBOM / Supply Chain", "Dependency Scanning"]},
+    {"name": "Platform و Cloud", "items": ["Debian / Arch Linux", "Linux Hardening", "AWS S3 / Lambda / API Gateway", "Docker / Podman", "Container Service Management", "مفاهیم Kubernetes", "آشنایی با Terraform"]},
+    {"name": "امنیت CI/CD و Supply Chain", "items": ["GitHub Actions / API", "CI/CD", "Secrets Management", "CycloneDX SBOM / Supply Chain", "Dependency Scanning", "Containerized Audits", "Command Policy Engines"]},
     {"name": "Detection و Observability", "items": ["OpenTelemetry", "مفاهیم Prometheus / Grafana", "Structured Logging", "مفاهیم SAST / DAST"]},
     {"name": "امنیت سیستم‌های AI", "items": ["ریسک‌های OWASP LLM", "Prompt Injection", "نشت داده", "Agent Permissions", "تحلیل با AI"]}
   ],
@@ -34,5 +34,6 @@
       "ریسک وابستگی‌ها، دسترسی سرویس‌ها و رفتار سیستم هنگام خطا را در زمان توسعه و تحویل بررسی می‌کردم."
     ]
   },
+  "projectKeys": ["claudio", "hotpaas", "midnight-captain"],
   "includePublication": false
 }

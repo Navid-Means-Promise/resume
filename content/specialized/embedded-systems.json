@@ -12,11 +12,11 @@
   "accentSoft": "#e2eadb",
   "skillGroups": [
     {"name": "Embedded Linux", "items": ["C / C++", "Embedded Linux", "Buildroot", "Yocto Project", "Linux HID", "DeviceTree concepts", "Boot / services", "Cross-compilation"]},
-    {"name": "Microcontrollers and RTOS", "items": ["ESP32 / ESP8266", "ESP-IDF familiarity", "ARM Cortex-M concepts", "FreeRTOS familiarity", "Zephyr familiarity"]},
-    {"name": "Protocols and hardware interfaces", "items": ["GPIO", "UART", "I2C", "SPI", "CAN concepts", "MQTT", "BLE / Wi-Fi"]},
+    {"name": "Microcontrollers and RTOS", "items": ["ESP32 / ESP32-C3 / ESP8266", "ESP-IDF", "ARM Cortex-M concepts", "FreeRTOS", "Zephyr familiarity"]},
+    {"name": "Protocols and hardware interfaces", "items": ["GPIO", "UART", "I2C", "SPI", "CAN concepts", "MQTT", "BLE / GATT / HID", "Wi-Fi", "WS2812"]},
     {"name": "Hardware design", "items": ["Schematic capture", "PCB design", "KiCad", "EasyEDA", "Sensors", "Actuators", "Hardware interfacing", "Datasheet analysis"]},
     {"name": "Hardware test and debug", "items": ["Instrumentation", "Prototype debugging", "HIL concepts", "JTAG / SWD concepts"]},
-    {"name": "Device software build and test", "items": ["CMake / build concepts", "Python test tooling"]},
+    {"name": "Device software build and test", "items": ["CMake / Ninja", "Cross-compilation", "Podman toolchains", "Python test tooling", "Android JNI", "GitHub Actions"]},
     {"name": "Device security", "items": ["Device trust boundaries", "Secure update concepts"]},
     {"name": "Edge AI", "items": ["TinyML", "TensorFlow Lite Micro familiarity", "ONNX concepts"]}
   ],
@@ -37,6 +37,6 @@
       "Took part in design, implementation, integration debugging, and final delivery."
     ]
   },
-  "projectKeys": ["license-hid"],
+  "projectKeys": ["license-hid", "ble-hid-lab", "vlc-arm-fix"],
   "includePublication": false
 }

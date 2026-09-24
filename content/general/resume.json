@@ -2,6 +2,7 @@
   "slug": "general",
   "label": "General",
   "cardNote": "🧭 The broad view: experience, tools, and selected work",
+  "cardTitle": "General resume",
   "role": "Software Developer",
   "headline": [
     "From understanding the problem",
@@ -11,13 +12,13 @@
   "accent": "#17656d",
   "accentSoft": "#dceae7",
   "skillGroups": [
-    {"name": "Languages & application engineering", "items": ["Java", "TypeScript / Node.js", "Python", "C / C++", "SQL", "Bash", "REST / OpenAPI", "Async & concurrency"]},
-    {"name": "Software architecture and quality", "items": ["Requirements analysis", "UML", "Design patterns", "Distributed systems", "Event-driven design", "API contracts", "Automated testing"]},
-    {"name": "Databases and data processing", "items": ["PostgreSQL / JDBC", "MongoDB", "Redis"]},
-    {"name": "Platforms and operations", "items": ["Linux", "AWS", "Git / CI/CD", "GitHub Actions", "Docker", "Kubernetes concepts", "Observability", "OpenTelemetry"]},
-    {"name": "Artificial intelligence", "items": ["LLM APIs / agents / RAG", "PyTorch / Hugging Face"]},
+    {"name": "Languages & application engineering", "items": ["Java", "TypeScript / Node.js", "Python", "PHP", "Rust", "C / C++", "Object Pascal / Free Pascal", "SQL", "Bash", "Lit / Web Components", "Ionic / Capacitor"]},
+    {"name": "Software architecture and quality", "items": ["Requirements analysis", "UML", "Design patterns", "Ports & adapters", "Distributed systems", "Event-driven design", "API contracts", "Playwright / Vitest / Jest"]},
+    {"name": "Databases and data processing", "items": ["PostgreSQL / JDBC", "SQLite", "MongoDB", "Redis", "TypeORM / Eloquent", "IndexedDB"]},
+    {"name": "Platforms and operations", "items": ["Linux", "AWS", "Git / CI/CD", "GitHub Actions / API", "Docker / Podman", "Kubernetes concepts", "Vite", "Observability / OpenTelemetry"]},
+    {"name": "Artificial intelligence", "items": ["LLM APIs / agents / RAG", "OpenRouter / Google GenAI", "Multi-model orchestration", "Semantic retrieval / Orama", "PyTorch / Hugging Face"]},
     {"name": "Software security", "items": ["Security assessment", "OWASP practices", "Reverse engineering"]},
-    {"name": "Embedded systems", "items": ["Embedded Linux", "PCB design", "Microcontrollers", "RTOS / TinyML"]}
+    {"name": "Embedded systems", "items": ["Embedded Linux", "ESP-IDF", "PCB design", "Microcontrollers", "BLE / GATT / HID", "RTOS / TinyML", "WS2812", "Android JNI"]}
   ],
   "experienceFocus": {
     "freelance": [
@@ -33,6 +34,6 @@
       "Built mobile and web applications with NoSQL databases and continued the remaining projects until the company’s commitments were complete."
     ]
   },
-  "projectKeys": ["sky-fw", "dream-river", "args-dataclass"],
+  "projectKeys": ["connected-products", "service-platforms", "ytogh"],
   "includePublication": true
 }

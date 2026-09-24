@@ -2,6 +2,7 @@
   "slug": "general",
   "label": "جامع",
   "cardNote": "🧭 تصویری کلی از مسیر کاری، مهارت‌ها و پروژه‌ها",
+  "cardTitle": "رزومهٔ کلی",
   "role": "توسعه‌دهندهٔ نرم‌افزار",
   "headline": [
     "از فهم مسئله تا ساختن چیزی که واقعاً کار کند؛",
@@ -11,13 +12,13 @@
   "accent": "#17656d",
   "accentSoft": "#dceae7",
   "skillGroups": [
-    {"name": "زبان‌ها و توسعهٔ اپلیکیشن", "items": ["Java", "TypeScript / Node.js", "Python", "C / C++", "SQL", "Bash", "REST / OpenAPI", "Async / Concurrency"]},
-    {"name": "معماری و کیفیت نرم‌افزار", "items": ["تحلیل نیازمندی‌ها", "UML", "Design Patterns", "سیستم‌های توزیع‌شده", "طراحی Event-Driven", "قرارداد API", "تست خودکار"]},
-    {"name": "Database و پردازش داده", "items": ["PostgreSQL / JDBC", "MongoDB", "Redis"]},
-    {"name": "پلتفرم و عملیات", "items": ["Linux", "AWS", "Git / CI/CD", "GitHub Actions", "Docker", "مفاهیم Kubernetes", "Observability", "OpenTelemetry"]},
-    {"name": "هوش مصنوعی", "items": ["LLM API / Agent / RAG", "PyTorch / Hugging Face"]},
+    {"name": "زبان‌ها و توسعهٔ اپلیکیشن", "items": ["Java", "TypeScript / Node.js", "Python", "PHP", "Rust", "C / C++", "Object Pascal / Free Pascal", "SQL", "Bash", "Lit / Web Components", "Ionic / Capacitor"]},
+    {"name": "معماری و کیفیت نرم‌افزار", "items": ["تحلیل نیازمندی‌ها", "UML", "Design Patterns", "Ports & Adapters", "سیستم‌های توزیع‌شده", "طراحی Event-Driven", "قرارداد API", "Playwright / Vitest / Jest"]},
+    {"name": "Database و پردازش داده", "items": ["PostgreSQL / JDBC", "SQLite", "MongoDB", "Redis", "TypeORM / Eloquent", "IndexedDB"]},
+    {"name": "پلتفرم و عملیات", "items": ["Linux", "AWS", "Git / CI/CD", "GitHub Actions / API", "Docker / Podman", "مفاهیم Kubernetes", "Vite", "Observability / OpenTelemetry"]},
+    {"name": "هوش مصنوعی", "items": ["LLM API / Agent / RAG", "OpenRouter / Google GenAI", "Multi-model Orchestration", "Semantic Retrieval / Orama", "PyTorch / Hugging Face"]},
     {"name": "امنیت نرم‌افزار", "items": ["ارزیابی امنیت", "استانداردهای OWASP", "مهندسی معکوس"]},
-    {"name": "Embedded Systems", "items": ["Embedded Linux", "طراحی PCB", "میکروکنترلر", "RTOS / TinyML"]}
+    {"name": "Embedded Systems", "items": ["Embedded Linux", "ESP-IDF", "طراحی PCB", "میکروکنترلر", "BLE / GATT / HID", "RTOS / TinyML", "WS2812", "Android JNI"]}
   ],
   "experienceFocus": {
     "freelance": [
@@ -33,6 +34,6 @@
       "روی اپلیکیشن‌های موبایل و وب با Databaseهای NoSQL کار کردم و پروژه‌های باقی‌مانده را تا انجام تعهدات شرکت ادامه دادم."
     ]
   },
-  "projectKeys": ["sky-fw", "dream-river", "args-dataclass"],
+  "projectKeys": ["connected-products", "service-platforms", "ytogh"],
   "includePublication": true
 }

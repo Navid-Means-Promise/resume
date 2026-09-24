@@ -11,9 +11,9 @@
   "accent": "#8a493f",
   "accentSoft": "#f0dfdc",
   "skillGroups": [
-    {"name": "Assessment & application security", "items": ["Penetration testing", "Metasploit", "OpenVAS", "OWASP Top 10", "OWASP ASVS", "Threat modeling", "Secure code review", "Vulnerability triage", "Patch development"]},
+    {"name": "Assessment & application security", "items": ["Penetration testing", "Metasploit", "OpenVAS", "OWASP Top 10", "OWASP ASVS", "Threat modeling", "Secure code review", "Vulnerability triage", "Patch development", "RBAC / JWT / OTP", "Security headers"]},
     {"name": "Analysis, network & standards", "items": ["Ghidra", "Reverse engineering", "Wireshark", "Packet analysis", "Network protocols", "ISO/IEC 27001 audit", "Risk analysis", "Incident-analysis concepts", "Security documentation"]},
-    {"name": "Platform, cloud & delivery", "items": ["Debian / Arch Linux", "Linux hardening", "AWS S3 / Lambda / API Gateway", "Docker", "Kubernetes concepts", "Terraform familiarity", "GitHub Actions", "CI/CD", "Secrets management", "SBOM / supply chain"]},
+    {"name": "Platform, cloud & delivery", "items": ["Debian / Arch Linux", "Linux hardening", "AWS S3 / Lambda / API Gateway", "Docker / Podman", "Container service management", "Kubernetes concepts", "Terraform familiarity", "GitHub Actions / API", "CI/CD", "Secrets management", "CycloneDX SBOM / supply chain", "Containerized audits", "Command policy engines"]},
     {"name": "Detection and observability", "items": ["OpenTelemetry", "Prometheus / Grafana concepts", "Structured logging", "SAST / DAST concepts", "Dependency scanning"]},
     {"name": "AI system security", "items": ["OWASP LLM risks", "Prompt injection", "Data leakage", "Agent permissions", "AI-assisted analysis"]}
   ],
@@ -32,5 +32,6 @@
       "Reviewed dependency risk, service access, and system behavior during failures as part of development and delivery."
     ]
   },
+  "projectKeys": ["claudio", "hotpaas", "midnight-captain"],
   "includePublication": false
 }

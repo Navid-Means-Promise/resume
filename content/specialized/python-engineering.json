@@ -14,9 +14,9 @@
     "freelance": "Freelance Python Developer"
   },
   "skillGroups": [
-    {"name": "Python language & design", "items": ["Python", "Type hints", "Data classes", "Pydantic", "OOP", "Protocols", "Asyncio", "Context managers", "Packaging", "CLI design"]},
+    {"name": "Python language & design", "items": ["Python", "Type hints / TypedDict", "Data classes", "Pydantic", "OOP", "Protocols", "Asyncio", "Context managers", "Packaging", "CLI design"]},
     {"name": "Web, services & persistence", "items": ["FastAPI", "Django familiarity", "Flask", "SQLAlchemy", "Alembic", "PostgreSQL", "Redis", "Celery", "HTTPX", "REST / OpenAPI"]},
-    {"name": "Data, automation & integration", "items": ["Pandas", "NumPy", "Polars familiarity", "Jupyter", "ETL workflows", "File / process automation", "Linux", "AWS Lambda", "Queues", "Webhooks"]},
+    {"name": "Data, automation & integration", "items": ["Pandas", "NumPy", "Polars familiarity", "Jupyter", "ETL workflows", "File / subprocess automation", "JSON policy engines", "Linux", "AWS Lambda", "Queues", "Webhooks"]},
     {"name": "Quality, build, and delivery", "items": ["Pytest", "Hypothesis familiarity", "mypy", "Ruff", "Poetry / uv", "GitHub Actions", "Docker"]},
     {"name": "AI capabilities in Python", "items": ["LLM APIs", "RAG / embeddings", "Model serving"]}
   ],
@@ -34,6 +34,6 @@
       "Took part in design, implementation, integration debugging, and final delivery."
     ]
   },
-  "projectKeys": ["args-dataclass"],
+  "projectKeys": ["args-dataclass", "claudio"],
   "includePublication": false
 }

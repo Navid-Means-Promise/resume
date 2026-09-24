@@ -15,10 +15,10 @@
   },
   "skillGroups": [
     {"name": "مبانی ML و Deep Learning", "items": ["PyTorch", "TensorFlow / Keras", "Scikit-learn", "XGBoost", "LightGBM", "آشنایی با JAX", "Model Selection", "Feature Engineering", "Cross-validation"]},
-    {"name": "مدل‌های Foundation و مولد", "items": ["HF Transformers", "Diffusers", "Datasets", "Accelerate", "PEFT / LoRA", "Sentence Transformers"]},
+    {"name": "مدل‌های Foundation و مولد", "items": ["HF Transformers", "Diffusers", "Datasets", "Accelerate", "PEFT / LoRA", "Sentence Transformers", "Google GenAI"]},
     {"name": "تحلیل داده و Scientific Python", "items": ["NumPy", "Pandas", "Polars", "SciPy", "Jupyter", "Matplotlib", "Seaborn", "Plotly", "OpenCV", "SQL"]},
-    {"name": "اپلیکیشن‌های LLM", "items": ["OpenAI-compatible APIs", "Ollama / vLLM", "Prompt / Tool Design", "RAG", "Agents", "Embeddings", "Vector Search", "LangChain", "LlamaIndex", "FAISS / pgvector"]},
-    {"name": "MLOps و Model Serving", "items": ["MLflow", "مفاهیم DVC", "ONNX", "FastAPI / Docker"]}
+    {"name": "اپلیکیشن‌های LLM", "items": ["OpenAI-compatible APIs", "OpenRouter", "Ollama / vLLM", "Prompt / Tool Design", "RAG", "Agents", "Multi-model Consensus", "Structured Outputs", "Embeddings", "Vector Search / Orama", "LangChain", "LlamaIndex", "FAISS / pgvector"]},
+    {"name": "MLOps و Model Serving", "items": ["MLflow", "مفاهیم DVC", "ONNX", "FastAPI / Fastify / NestJS", "Docker"]}
   ],
   "experienceFocus": {
     "freelance": [
@@ -34,5 +34,6 @@
       "در طراحی، ثبت خطا و تحویل اپلیکیشن شریک بودم و یاد گرفتم بخش داده‌محور باید با بقیهٔ محصول هماهنگ بماند."
     ]
   },
+  "projectKeys": ["ai-legal-platform", "connected-products"],
   "includePublication": true
 }
