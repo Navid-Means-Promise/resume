@@ -83,6 +83,10 @@ const LOCALIZED_TEXT_KEYS = new Set([
 const LTR_RUN_PATTERN =
   /(?:\.[A-Za-z]|[A-Za-z0-9])(?:[A-Za-z0-9+#._:@/-]*[A-Za-z0-9+#])?(?:[ \t]+(?:[+&/↔-][ \t]+)?(?:\.[A-Za-z]|[A-Za-z0-9])(?:[A-Za-z0-9+#._:@/-]*[A-Za-z0-9+#])?)*/gu;
 
+// Prevent a visible reflow before the runtime aligner measures the loaded Persian font.
+// Canonical copy remains keshide-free in the locale catalog and data-original-text.
+const PERSIAN_FOCUSED_EDITIONS_INITIAL_LINE_ONE = "رزومـه‌هـای تـخـصـصی من";
+
 function escapeHtml(value: unknown = ""): string {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -473,6 +477,16 @@ function renderLibrary(context: BuildContext): string {
   const portraitAlt = formatLocalized(strings.portraitAlt, { name: profile.name });
   const stylesheetHref = assetHref(assetPrefix, ASSET_PATHS.stylesheet, assetVersions);
   const portraitHref = assetHref(assetPrefix, portraitArt(locale), assetVersions);
+  const focusedEditionsHeading = locale.code === "fa"
+    ? `<span class="sr-only">${escapeHtml(strings.focusedEditions)}</span>
+          <span class="persian-align-visual" data-persian-align aria-hidden="true">
+            <span class="persian-align-line text-nowrap" data-original-text="${escapeHtml(strings.focusedEditionsLineOne)}">${escapeHtml(PERSIAN_FOCUSED_EDITIONS_INITIAL_LINE_ONE)}</span>
+            <span class="persian-align-line text-nowrap" data-original-text="${escapeHtml(strings.focusedEditionsLineTwo)}">${escapeHtml(strings.focusedEditionsLineTwo)}</span>
+          </span>`
+    : renderLocalizedText(strings.focusedEditions, locale.direction);
+  const persianAlignerScript = locale.code === "fa"
+    ? `<script defer src="${assetHref(assetPrefix, ASSET_PATHS.scripts.persianAligner, assetVersions)}"></script>`
+    : "";
 
   return `<!doctype html>
 <html lang="${escapeHtml(locale.code)}" dir="${escapeHtml(locale.direction)}">
@@ -503,7 +517,7 @@ function renderLibrary(context: BuildContext): string {
 
     <section aria-labelledby="editions-heading">
       <div class="library-heading">
-        <h2 id="editions-heading">${renderLocalizedText(strings.focusedEditions, locale.direction)}</h2>
+        <h2 id="editions-heading">${focusedEditionsHeading}</h2>
         <p>${renderLocalizedText(strings.libraryHint, locale.direction)}</p>
       </div>
       <div class="edition-grid">${cards}</div>
@@ -514,6 +528,7 @@ function renderLibrary(context: BuildContext): string {
       <span>${renderLocalizedText(profile.availability, locale.direction)}</span>
     </footer>
   </main>
+  ${persianAlignerScript}
 </body>
 </html>`;
 }

@@ -9,6 +9,7 @@ interface BrowserAudit {
   customFontFailures: string[];
   direction: string;
   offenders: string[];
+  persianAlignmentFailures: string[];
   primaryActionFailures: string[];
   rootOverflowX: string;
   rootScrollWidth: number;
@@ -42,6 +43,11 @@ function assertAudit(audit: BrowserAudit, pagePath: string, width: number): void
   if (audit.customFontFailures.length > 0) {
     throw new Error(
       `${page} did not render with its Persian fonts at ${width}px: ${audit.customFontFailures.join(", ")}`,
+    );
+  }
+  if (audit.persianAlignmentFailures.length > 0) {
+    throw new Error(
+      `${page} has invalid Persian title alignment at ${width}px: ${audit.persianAlignmentFailures.join(", ")}`,
     );
   }
   const expectedDirection = page.startsWith(`fa${path.sep}`) || page === path.join("fa", "index.html")
@@ -116,6 +122,40 @@ export async function verifyBrowser(): Promise<void> {
                   }
                 }
               }
+              window.PersianAligner?.run();
+              const persianAlignmentFailures = [];
+              const alignedTitle = document.querySelector("[data-persian-align]");
+              if (alignedTitle) {
+                const lines = [...alignedTitle.querySelectorAll(".persian-align-line")];
+                if (alignedTitle.getAttribute("aria-hidden") !== "true") {
+                  persianAlignmentFailures.push("visual text must be hidden from assistive technology");
+                }
+                if (lines.length !== 2) {
+                  persianAlignmentFailures.push("expected two deliberate lines");
+                } else {
+                  const style = getComputedStyle(lines[0]);
+                  const canvas = document.createElement("canvas");
+                  const context = canvas.getContext("2d");
+                  if (!context) {
+                    persianAlignmentFailures.push("could not measure title text");
+                  } else {
+                    context.font = style.fontStyle + " " + style.fontWeight + " " + style.fontSize + " " + style.fontFamily;
+                    const widths = lines.map((line) => context.measureText(line.textContent ?? "").width);
+                    if (Math.abs(widths[0] - widths[1]) > 5) {
+                      persianAlignmentFailures.push("line widths differ by " + Math.abs(widths[0] - widths[1]).toFixed(2) + "px");
+                    }
+                  }
+                  if (!lines.some((line) => (line.textContent ?? "").includes("ـ"))) {
+                    persianAlignmentFailures.push("no Persian keshide was applied");
+                  }
+                  if (lines.some((line) => (line.dataset.originalText ?? "").includes("ـ"))) {
+                    persianAlignmentFailures.push("canonical text contains presentation keshides");
+                  }
+                  if (lines.some((line) => getComputedStyle(line).whiteSpace !== "nowrap")) {
+                    persianAlignmentFailures.push("line wrapping is not locked");
+                  }
+                }
+              }
               return {
                 bodyOverflowX: getComputedStyle(document.body).overflowX,
                 customFontFailures,
@@ -127,6 +167,7 @@ export async function verifyBrowser(): Promise<void> {
                   })
                   .slice(0, 8)
                   .map(label),
+                persianAlignmentFailures,
                 primaryActionFailures: visible
                   .filter((element) => element.matches("[data-primary-action]"))
                   .filter((element) => {

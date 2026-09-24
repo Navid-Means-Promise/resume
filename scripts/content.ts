@@ -42,6 +42,8 @@ const LOCALE_STRING_KEYS = [
   "libraryTitle",
   "libraryLede",
   "focusedEditions",
+  "focusedEditionsLineOne",
+  "focusedEditionsLineTwo",
   "libraryHint",
   "openResume",
   "libraryMeta",

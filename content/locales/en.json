@@ -25,6 +25,8 @@
     "libraryTitle": "{name}",
     "libraryLede": "For more than 15 years, I have taken software and multidisciplinary projects from requirements and architecture through implementation, debugging, delivery, and maintenance. My work spans application and web development, software security, AI and data, and embedded systems, with an emphasis on solutions that remain reliable and maintainable in practice.",
     "focusedEditions": "Specialized resumes by field",
+    "focusedEditionsLineOne": "Specialized resumes",
+    "focusedEditionsLineTwo": "by field",
     "libraryHint": "Each edition focuses on the experience, skills, and projects most relevant to one field. Read it online or download the PDF.",
     "openResume": "Open résumé →",
     "libraryMeta": "Professional profile and specialized resumes for {name}, a software engineer working across development, security, AI, data, and embedded systems.",

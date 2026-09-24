@@ -27,7 +27,13 @@ test("the static build is complete and subpath-safe", async () => {
       assert.doesNotMatch(library, /\{(?:location|name)\}/u);
       if (code === "fa") {
         assert.match(library, /<h1>نوید محمدی<\/h1>/u);
-        assert.match(library, /رزومه‌های تخصصی بر اساس حوزه‌های فعالیت/u);
+        assert.match(library, /رزومه‌های تخصصی من بر اساس حوزه‌های فعالیت/u);
+        assert.match(library, /data-persian-align aria-hidden="true"/u);
+        assert.match(library, /data-original-text="رزومه‌های تخصصی من"/u);
+        assert.match(library, /data-original-text="بر اساس حوزه‌های فعالیت"/u);
+        assert.match(library, /رزومـه‌هـای تـخـصـصی من/u);
+        assert.equal((library.match(/class="persian-align-line text-nowrap"/gu) ?? []).length, 2);
+        assert.match(library, /assets\/scripts\/persian-aligner\.js\?v=[0-9a-f]{12}/u);
         assert.match(library, /نسخهٔ جامع/u);
         assert.doesNotMatch(library, /رزومهٔ متناسب با موقعیت شغلی/u);
       }

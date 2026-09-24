@@ -793,6 +793,15 @@ html[lang="fa"] .library-hero .lede {
   font-family: "Vazirmatn Resume", "Noto Sans Arabic", "DejaVu Sans", Tahoma, sans-serif;
 }
 
+html[lang="fa"] .library-hero .lede,
+html[lang="fa"] .library-heading p {
+  text-align: justify;
+  text-align-last: right;
+  text-justify: inter-word;
+  text-wrap: pretty;
+  -webkit-text-align-last: right;
+}
+
 html[lang="fa"] .identity-block h1 {
   font-size: 23pt;
   line-height: 1.12;
@@ -929,6 +938,35 @@ html[dir="rtl"] .experience-copy {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(28px, 4vw, 46px);
   font-weight: 500;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.persian-align-visual {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: start;
+}
+
+.persian-align-line {
+  display: block;
+  inline-size: 100%;
+  line-height: 1.18;
 }
 
 .library-heading p {

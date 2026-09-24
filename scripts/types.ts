@@ -92,6 +92,8 @@ export interface LocaleStrings {
   libraryTitle: string;
   libraryLede: string;
   focusedEditions: string;
+  focusedEditionsLineOne: string;
+  focusedEditionsLineTwo: string;
   libraryHint: string;
   openResume: string;
   libraryMeta: string;

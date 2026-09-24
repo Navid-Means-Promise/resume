@@ -8,6 +8,9 @@ export const DIST_DIRECTORY = path.join(ROOT_DIRECTORY, "dist");
 
 export const ASSET_PATHS = {
   stylesheet: "assets/styles/resume.css",
+  scripts: {
+    persianAligner: "assets/scripts/persian-aligner.js",
+  },
   header: {
     background: "assets/images/header/header-background-v1.webp",
     composite: "assets/images/header/header-composite-v1.webp",
@@ -27,6 +30,7 @@ export const ASSET_PATHS = {
 } as const;
 
 export const BINARY_ASSET_PATHS = [
+  ASSET_PATHS.scripts.persianAligner,
   ASSET_PATHS.header.background,
   ASSET_PATHS.header.composite,
   ASSET_PATHS.header.portrait,
