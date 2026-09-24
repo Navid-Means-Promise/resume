@@ -447,11 +447,14 @@ function renderLibrary(context: BuildContext): string {
   const assetPrefix = localeOutput.outputPrefix ? ".." : ".";
   const cards = editions
     .map((edition, index) => {
+      const editionKicker = locale.code === "fa"
+        ? `${strings.editionWord}ٔ ${edition.label}`
+        : `${edition.label} · ${strings.editionWord}`;
       return `
         <article class="edition-card" style="--card-accent: ${escapeHtml(edition.accent)}">
           <div class="edition-card-index" aria-hidden="true">${String(index + 1).padStart(2, "0")}</div>
           <div class="edition-card-copy">
-            <p class="section-kicker">${renderLocalizedText(edition.label, locale.direction)} · ${renderLocalizedText(strings.editionWord, locale.direction)}</p>
+            <p class="section-kicker">${renderLocalizedText(editionKicker, locale.direction)}</p>
             <h3>${renderLocalizedText(edition.role, locale.direction)}</h3>
             <p>${renderLocalizedText(edition.headline.join(" "), locale.direction)}</p>
             <div class="edition-actions">
@@ -462,8 +465,11 @@ function renderLibrary(context: BuildContext): string {
         </article>`;
     })
     .join("");
-  const libraryLede = formatLocalized(strings.libraryLede, { name: profile.name });
-  const libraryMeta = formatLocalized(strings.libraryMeta, { name: profile.name });
+  const libraryReplacements = { location: profile.location, name: profile.name };
+  const libraryEyebrow = formatLocalized(strings.libraryEyebrow, libraryReplacements);
+  const libraryTitle = formatLocalized(strings.libraryTitle, libraryReplacements);
+  const libraryLede = formatLocalized(strings.libraryLede, libraryReplacements);
+  const libraryMeta = formatLocalized(strings.libraryMeta, libraryReplacements);
   const portraitAlt = formatLocalized(strings.portraitAlt, { name: profile.name });
   const stylesheetHref = assetHref(assetPrefix, ASSET_PATHS.stylesheet, assetVersions);
   const portraitHref = assetHref(assetPrefix, portraitArt(locale), assetVersions);
@@ -486,8 +492,8 @@ function renderLibrary(context: BuildContext): string {
     </nav>
     <header class="library-hero" id="main-content">
       <div>
-        <p class="eyebrow">${renderLocalizedText(strings.libraryEyebrow, locale.direction)}</p>
-        <h1>${renderLocalizedText(strings.libraryTitle, locale.direction)}</h1>
+        <p class="eyebrow">${renderLocalizedText(libraryEyebrow, locale.direction)}</p>
+        <h1>${renderLocalizedText(libraryTitle, locale.direction)}</h1>
         <p class="lede">${renderLocalizedText(libraryLede, locale.direction)}</p>
       </div>
       <figure class="library-portrait">

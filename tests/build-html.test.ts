@@ -24,6 +24,13 @@ test("the static build is complete and subpath-safe", async () => {
         (library.match(/<a\b[^>]*\sdownload(?:>|\s)/gu) ?? []).length,
         EDITION_ORDER.length,
       );
+      assert.doesNotMatch(library, /\{(?:location|name)\}/u);
+      if (code === "fa") {
+        assert.match(library, /<h1>نوید محمدی<\/h1>/u);
+        assert.match(library, /رزومه‌های تخصصی بر اساس حوزه‌های فعالیت/u);
+        assert.match(library, /نسخهٔ جامع/u);
+        assert.doesNotMatch(library, /رزومهٔ متناسب با موقعیت شغلی/u);
+      }
 
       for (const slug of EDITION_ORDER) {
         const page = await readFile(
