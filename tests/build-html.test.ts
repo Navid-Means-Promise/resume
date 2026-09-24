@@ -48,6 +48,7 @@ test("the static build is complete and subpath-safe", async () => {
         assert.match(library, /🧭 تصویری کلی از مسیر کاری، مهارت‌ها و پروژه‌ها/u);
         assert.match(library, /<h3>رزومهٔ کلی<\/h3>/u);
         assert.doesNotMatch(library, /<h3>توسعه‌دهندهٔ نرم‌افزار<\/h3>/u);
+        assert.match(library, /توسعه‌دهندهٔ پروژه‌های نرم‌افزاری و سخت‌افزاری/u);
         assert.match(library, /🐍 برای ابزارها و سرویس‌هایی که قرار است ساده بمانند/u);
         assert.doesNotMatch(library, /مهندس ارشد/u);
         assert.doesNotMatch(library, /نسخهٔ (?:جامع|مهندسی|Java)/u);
@@ -64,6 +65,19 @@ test("the static build is complete and subpath-safe", async () => {
         assert.match(page, new RegExp(`data-locale="${code}"`, "u"));
         assert.doesNotMatch(page, /portrait-cutout-v1\.png/u);
         assert.doesNotMatch(page, /\{\{/u);
+        if (slug === "general") {
+          if (code === "fa") {
+            assert.match(
+              page,
+              /<p class="role">توسعه‌دهندهٔ پروژه‌های نرم‌افزاری و سخت‌افزاری<\/p>/u,
+            );
+          } else {
+            assert.match(
+              page,
+              /<p class="role">Software and Hardware Project Developer<\/p>/u,
+            );
+          }
+        }
         if (code === "fa") {
           assert.match(page, /<bdi>۰۱\/۰۲<\/bdi>/u);
           if (slug === "java-backend") {
