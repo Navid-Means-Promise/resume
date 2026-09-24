@@ -86,6 +86,7 @@ const LTR_RUN_PATTERN =
 // Prevent a visible reflow before the runtime aligner measures the loaded Persian font.
 // Canonical copy remains keshide-free in the locale catalog and data-original-text.
 const PERSIAN_FOCUSED_EDITIONS_INITIAL_LINE_ONE = "رزومـه‌هـای تـخـصـصی من";
+const PERSIAN_DIGITS = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"] as const;
 
 function escapeHtml(value: unknown = ""): string {
   return String(value)
@@ -96,22 +97,28 @@ function escapeHtml(value: unknown = ""): string {
     .replaceAll("'", "&#039;");
 }
 
+function localizeDigits(value: string, direction: ResumeLocale["direction"]): string {
+  if (direction !== "rtl") return value;
+  return value.replace(/[0-9]/gu, (digit) => PERSIAN_DIGITS[Number(digit)] ?? digit);
+}
+
 function renderLocalizedText(
   value: unknown,
   direction: ResumeLocale["direction"],
 ): string {
   const source = String(value ?? "");
   if (direction !== "rtl") return escapeHtml(source);
+  const renderChunk = (chunk: string): string => escapeHtml(localizeDigits(chunk, direction));
 
   let output = "";
   let cursor = 0;
   for (const match of source.matchAll(LTR_RUN_PATTERN)) {
     const index = match.index;
-    output += escapeHtml(source.slice(cursor, index));
-    output += `<bdi dir="ltr" lang="en">${escapeHtml(match[0])}</bdi>`;
+    output += renderChunk(source.slice(cursor, index));
+    output += `<bdi dir="ltr" lang="en">${renderChunk(match[0])}</bdi>`;
     cursor = index + match[0].length;
   }
-  return output + escapeHtml(source.slice(cursor));
+  return output + renderChunk(source.slice(cursor));
 }
 
 function formatLocalized(value: string, replacements: Record<string, string>): string {
@@ -410,6 +417,9 @@ function renderEdition(context: BuildContext, edition: ResumeEdition): string {
     ongoingPublications: profile.academicProfile.ongoingPublications,
     ongoingResearch: strings.ongoingResearch,
     pageOne: strings.pageOne,
+    pageOneNumber: localizeDigits("01", locale.direction),
+    pageOneOfTwo: localizeDigits("01/02", locale.direction),
+    pageTwoNumber: localizeDigits("02", locale.direction),
     pdfFilename: getPdfFilename(locale.code, edition.slug as (typeof EDITION_ORDER)[number]),
     phone: profile.phone,
     phoneHref: profile.phoneHref,
@@ -451,7 +461,7 @@ function renderLibrary(context: BuildContext): string {
   const assetPrefix = localeOutput.outputPrefix ? ".." : ".";
   const renderCard = (edition: ResumeEdition, index: number): string => `
         <article class="edition-card" style="--card-accent: ${escapeHtml(edition.accent)}">
-          <div class="edition-card-index" aria-hidden="true">${String(index + 1).padStart(2, "0")}</div>
+          <div class="edition-card-index" aria-hidden="true">${localizeDigits(String(index + 1).padStart(2, "0"), locale.direction)}</div>
           <div class="edition-card-copy">
             <p class="section-kicker">${renderLocalizedText(edition.cardNote, locale.direction)}</p>
             <h3>${renderLocalizedText(edition.role, locale.direction)}</h3>

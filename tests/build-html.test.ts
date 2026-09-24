@@ -46,6 +46,8 @@ test("the static build is complete and subpath-safe", async () => {
         assert.doesNotMatch(library, /مهندس ارشد/u);
         assert.doesNotMatch(library, /نسخهٔ (?:جامع|مهندسی|Java)/u);
         assert.doesNotMatch(library, /رزومهٔ متناسب با موقعیت شغلی/u);
+        assert.match(library, /class="edition-card-index" aria-hidden="true">۰۱</u);
+        assert.doesNotMatch(library, />[^<]*[0-9][^<]*</u);
       }
 
       for (const slug of EDITION_ORDER) {
@@ -56,6 +58,10 @@ test("the static build is complete and subpath-safe", async () => {
         assert.match(page, new RegExp(`data-locale="${code}"`, "u"));
         assert.doesNotMatch(page, /portrait-cutout-v1\.png/u);
         assert.doesNotMatch(page, /\{\{/u);
+        if (code === "fa") {
+          assert.match(page, /<bdi>۰۱\/۰۲<\/bdi>/u);
+          assert.doesNotMatch(page, />[^<]*[0-9][^<]*</u);
+        }
       }
     }
   } finally {

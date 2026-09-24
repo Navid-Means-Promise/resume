@@ -22,7 +22,7 @@
       <header class="cover">
         <div class="folio-bar">
           <span>{{documentSeries}} · {{label}}</span>
-          <span>{{pageOne}} · <bdi>01/02</bdi></span>
+          <span>{{pageOne}} · <bdi>{{pageOneOfTwo}}</bdi></span>
         </div>
 
         <figure class="portrait-frame">
@@ -63,7 +63,7 @@
 
       <footer class="page-footer">
         <span>{{name}} · {{role}}</span>
-        <span><bdi>01</bdi></span>
+        <span><bdi>{{pageOneNumber}}</bdi></span>
       </footer>
     </section>
 
@@ -73,7 +73,7 @@
           <p class="eyebrow">{{name}} · {{label}}</p>
           <h2>{{scopeAndEvidence}}</h2>
         </div>
-        <span class="page-number">02</span>
+        <span class="page-number">{{pageTwoNumber}}</span>
       </header>
 
       {{academicDossier}}
@@ -97,7 +97,7 @@
       <footer class="page-footer">
         <span>{{name}} · {{label}} · {{editionWord}}</span>
         <span>{{focusedResume}} · {{additionalDetail}}</span>
-        <span><bdi>02</bdi></span>
+        <span><bdi>{{pageTwoNumber}}</bdi></span>
       </footer>
     </section>
   </main>
