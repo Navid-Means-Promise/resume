@@ -60,7 +60,18 @@ test("the static build is complete and subpath-safe", async () => {
         assert.doesNotMatch(page, /\{\{/u);
         if (code === "fa") {
           assert.match(page, /<bdi>۰۱\/۰۲<\/bdi>/u);
-          assert.doesNotMatch(page, />[^<]*[0-9][^<]*</u);
+          if (slug === "java-backend") {
+            assert.match(page, />JUnit 5<\/bdi>/u);
+            assert.doesNotMatch(page, /JUnit ۵/u);
+          }
+          if (slug === "security-devops") {
+            assert.match(page, />OWASP Top 10<\/bdi>/u);
+            assert.match(page, />ISO\/IEC 27001<\/bdi>/u);
+          }
+          if (slug === "embedded-systems") {
+            assert.match(page, />ESP32 \/ ESP8266<\/bdi>/u);
+            assert.doesNotMatch(page, /ESP۳۲/u);
+          }
         }
       }
     }

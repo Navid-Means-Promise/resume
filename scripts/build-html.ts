@@ -115,7 +115,7 @@ function renderLocalizedText(
   for (const match of source.matchAll(LTR_RUN_PATTERN)) {
     const index = match.index;
     output += renderChunk(source.slice(cursor, index));
-    output += `<bdi dir="ltr" lang="en">${renderChunk(match[0])}</bdi>`;
+    output += `<bdi dir="ltr" lang="en">${escapeHtml(match[0])}</bdi>`;
     cursor = index + match[0].length;
   }
   return output + renderChunk(source.slice(cursor));
