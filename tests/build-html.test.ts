@@ -49,6 +49,11 @@ test("the static build is complete and subpath-safe", async () => {
         assert.match(library, /<h3>رزومهٔ کلی<\/h3>/u);
         assert.doesNotMatch(library, /<h3>توسعه‌دهندهٔ نرم‌افزار<\/h3>/u);
         assert.match(library, /توسعه‌دهندهٔ پروژه‌های نرم‌افزاری و سخت‌افزاری/u);
+        assert.match(
+          library,
+          /امنیت سایبری و طراحی و پیاده‌سازی دستگاه‌های الکترونیکی/u,
+        );
+        assert.doesNotMatch(library, /کارهای امنیتی، الکترونیک و دستگاه‌های متصل/u);
         assert.match(library, /🐍 برای ابزارها و سرویس‌هایی که قرار است ساده بمانند/u);
         assert.doesNotMatch(library, /مهندس ارشد/u);
         assert.doesNotMatch(library, /نسخهٔ (?:جامع|مهندسی|Java)/u);
